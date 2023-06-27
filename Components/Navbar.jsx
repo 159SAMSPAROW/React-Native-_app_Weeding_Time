@@ -17,7 +17,7 @@ export default function Navbar() {
     <View style={navbar_style.navbar}>
       <ImageBackground
         source={require("../assets/navbar_Bg.jpg")}
-        style={navbar_style.navbar.background}
+        style={navbar_style.navbar.bg}
       >
         <View style={navbar_style.navbar.container}>
           <Text style={navbar_style.navbar.logo}>Weeding Time</Text>

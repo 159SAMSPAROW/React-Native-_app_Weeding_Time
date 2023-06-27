@@ -1,7 +1,9 @@
 import { StyleSheet } from "react-native";
 
 const navbar_style = StyleSheet.create({
+
   navbar: {
+    height: 55,
     display: "flex",
     borderWidth: 3,
     borderColor: "lightgray",
@@ -16,11 +18,12 @@ const navbar_style = StyleSheet.create({
     logo: {
       marginLeft: 30,
       fontSize: 40,
+      fontWeight: "bold",
       color: "#6750A4",
       fontFamily: "Arizonia-Regular",
     },
 
-    background: {
+    bg: {
       resizeMode: "cover",
       resizeMethod: "auto",
       opacity: 0.8,
