@@ -32,7 +32,14 @@ export const HomepageCardContent = [
           description: "Explore mouthwatering options and create an unforgettable culinary experience."
         }
       },
-   
+      {
+        drinks: {
+          illustration: require("./assets/Champagne.jpg"),
+          title: "Drinks",
+          image: require("./assets/drinks.jpg"),
+          description: "Explore mouthwatering options and create an unforgettable culinary experience."
+        }
+      },
 ]
   
   

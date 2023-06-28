@@ -10,7 +10,7 @@ const homepage_card = StyleSheet.create({
     backgroundColor: "#F5F5F5",
   },
 
-  header: { top: 20 },
+  header: { top: 40 },
 
   divider: {
     height: 4,
@@ -26,7 +26,7 @@ const homepage_card = StyleSheet.create({
   },
 
   banner: {
-    height: 55,
+    height: 80,
     opacity: 0.4,
   },
 
@@ -37,10 +37,10 @@ const homepage_card = StyleSheet.create({
   },
 
   illustration: {
-    width: 85,
-    height: 85,
-    borderRadius: 50,
-    left: 20,
+    width: 115,
+    height: 115,
+    borderRadius: 60,
+    left: 15,
     borderWidth: 4,
     borderColor: "#D0C9E2",
     shadowColor: "#D0C9E2",
@@ -54,28 +54,26 @@ const homepage_card = StyleSheet.create({
 
   title: {
     position: "relative",
-    top: 26,
-    left: 40,
+    top: 32,
+    left: "25%",
     fontFamily: "Alegreya-Sans-SC",
-    fontSize: 28,
+    fontSize: 32,
     fontWeight: "light",
     color: "#462B48",
     textDecorationLine: "underline",
-  },
-
-  body: {
-    
   },
 
   image: {
     width: "100%",
     height: 350,
     top: "20%",
+    borderWidth: 5,
+    borderColor: "#FFD1DC",
   },
 
   descriptionContainer: {
     width: "100%",
-    height: 150,
+    height: 180,
     marginBottom: 5,
     flexDirection: "row",
     justifyContent: "space-between",
@@ -96,7 +94,7 @@ const homepage_card = StyleSheet.create({
   description: {
    width:"80%",
    padding: 15,
-   fontSize: 18,
+   fontSize: 20,
    color: "#462B47",
   },
 

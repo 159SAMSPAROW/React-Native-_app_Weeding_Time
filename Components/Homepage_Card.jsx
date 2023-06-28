@@ -9,7 +9,10 @@ const Homepage_card = () => {
   let [fontsLoaded] = useFonts({
     "Alegreya-Sans-SC": require("../assets/fonts/AlegreyaSansSC-Regular.ttf"),
   });
-
+  
+  if (!fontsLoaded) {
+    return  <Text>Loading...</Text>; 
+  }
   
 
   return (
@@ -38,6 +41,7 @@ const Homepage_card = () => {
             </View>
 
             <View style={homepage_card.body}>
+            
               <Image
                 style={homepage_card.image}
                 source={category.image}
