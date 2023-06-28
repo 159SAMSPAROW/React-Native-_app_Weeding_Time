@@ -6,10 +6,11 @@ import { styles } from "./Style/global_style";
 import Hero_Section from "./Components/Hero_Section";
 import Homepage_Card from "./Components/Homepage_Card";
 import HowToUse from "./Components/HowToUse";
+import Homepage_carousel from "./Components/Homepage_carousel";
 
 export default function App() {
   // Obtenez la hauteur de l'écran
-  const screenHeight = Dimensions.get('window').height;
+  const screenHeight = Dimensions.get("window").height;
   const navbarHeight = 55;
 
   return (
@@ -21,7 +22,8 @@ export default function App() {
       >
         <Hero_Section />
         <Homepage_Card />
-        <HowToUse /> 
+        <Homepage_carousel/>
+        <HowToUse />
       </ScrollView>
       <StatusBar style="auto" />
     </SafeAreaView>

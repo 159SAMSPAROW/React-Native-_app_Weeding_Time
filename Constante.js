@@ -42,6 +42,19 @@ export const HomepageCardContent = [
       },
 ]
   
+export const carouselItems = [
+  {
+    title: "Item 1",
+    image: require("./assets/Table_ware.webp"),
+    icon: require("./assets/Table_ware_icon.jpg"),
+  },
+  {
+    title: "Item 2",
+    image: require("./assets/Decoration.webp"),
+    icon: require("./assets/Decoration_icon.png"),
+  },
+  // Ajoutez plus d'éléments ici
+];
   
   
   

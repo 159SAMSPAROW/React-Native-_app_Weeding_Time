@@ -92,31 +92,28 @@ const homepage_card = StyleSheet.create({
   },
 
   description: {
-   width:"80%",
-   padding: 15,
-   fontSize: 20,
-   color: "#462B47",
+    width: "80%",
+    padding: 15,
+    fontSize: 20,
+    color: "#462B47",
   },
 
   eyeContainer: {
     padding: 15,
     alignSelf: "flex-end",
     alignItems: "center",
-   
   },
 
   eye: {
     fontSize: 30,
     color: "#C654E9",
-    
   },
 
-  clickText:{
+  clickText: {
     textAlign: "center",
     fontWeight: "bold",
     fontSize: 14,
     color: "#C654E9",
-    
-  }
+  },
 });
 export default homepage_card;

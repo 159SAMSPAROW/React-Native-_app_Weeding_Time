@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
   },
 
   scrollView: {
-    flex: 1, 
+    flex: 1,
   },
 
   h2: {
@@ -18,6 +18,5 @@ const styles = StyleSheet.create({
     color: "#462B48",
     textAlign: "center",
   },
-
 });
 export { styles };

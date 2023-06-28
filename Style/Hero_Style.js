@@ -1,13 +1,12 @@
-import { StyleSheet , Dimensions} from "react-native";
+import { StyleSheet, Dimensions } from "react-native";
 
-const windowHeight = Dimensions.get('window').height;
+const windowHeight = Dimensions.get("window").height;
 const navbarHeight = 55;
 //console.log(windowHeight);
 
 const heroStyle = StyleSheet.create({
-  
   header: {
-    backgroundColor: "#F5F5F5", 
+    backgroundColor: "#F5F5F5",
     flex: 1,
     minHeight: windowHeight - navbarHeight,
     shadowColor: "#000",
@@ -66,4 +65,4 @@ const heroStyle = StyleSheet.create({
     fontSize: 32,
   },
 });
-export default  heroStyle ;
+export default heroStyle;

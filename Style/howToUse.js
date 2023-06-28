@@ -7,35 +7,35 @@ const howToUse = StyleSheet.create({
   style: {
     minHeight: windowHeight - navbarHeight,
     backgroundColor: "#F5F5F5",
-    
+
     alignItems: "center",
-    
   },
-  
+
   backgroundImage: {
-    position: 'absolute',
+    position: "absolute",
     top: 0,
-    width: '100%',
-    height: '100%',
+    width: "100%",
+    height: "100%",
   },
 
   opacityLayer: {
     backgroundColor: "#ffffff",
     opacity: 0.1,
-    width: '100%',
-    height: '100%',
+    width: "100%",
+    height: "100%",
   },
 
   content: {
     zIndex: 1,
-    
   },
 
   h2: {
-   margin: 35,
+    margin: 35,
   },
 
   list: {
+    margin: 20,
+    width: "90%",
     backgroundColor: "#FFFFFF",
     borderWidth: 2,
     borderColor: "#462B48",

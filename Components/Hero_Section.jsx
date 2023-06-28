@@ -14,7 +14,6 @@ const Hero_Section = () => {
   }
 
   return (
-   
     <View style={heroStyle.header}>
       <View style={heroStyle.white_space}>
         <Icon name="star-border" style={heroStyle.stars} />
@@ -43,10 +42,12 @@ const Hero_Section = () => {
       </View>
       <View style={heroStyle.scrollDown}>
         <Text style={heroStyle.scrollDownText}>Please Scroll</Text>
-        <Icon style={heroStyle.scrollDownIcon} name="keyboard-arrow-down"></Icon>
+        <Icon
+          style={heroStyle.scrollDownIcon}
+          name="keyboard-arrow-down"
+        ></Icon>
       </View>
     </View>
-    
   );
 };
 
