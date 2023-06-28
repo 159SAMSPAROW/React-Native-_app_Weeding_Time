@@ -5,6 +5,7 @@ const navbarHeight = 55;
 //console.log(windowHeight);
 
 const heroStyle = StyleSheet.create({
+  
   header: {
     backgroundColor: "#F5F5F5", 
     flex: 1,

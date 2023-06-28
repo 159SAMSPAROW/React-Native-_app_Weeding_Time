@@ -10,7 +10,7 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <Navbar />
-      <ScrollView style={styles.ScrollView}>
+      <ScrollView>
         <Hero_Section />
         <Homepage_Card />
         <StatusBar style="auto" />

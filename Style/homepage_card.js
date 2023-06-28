@@ -10,7 +10,7 @@ const homepage_card = StyleSheet.create({
     backgroundColor: "#F5F5F5",
   },
 
-  header: { top: 50 },
+  header: { top: 20 },
 
   divider: {
     height: 4,
@@ -69,16 +69,17 @@ const homepage_card = StyleSheet.create({
 
   image: {
     width: "100%",
-    height: 200,
-    top: "30%",
+    height: 350,
+    top: "20%",
   },
 
   descriptionContainer: {
     width: "100%",
-    height: "auto",
+    height: 150,
+    marginBottom: 5,
     flexDirection: "row",
     justifyContent: "space-between",
-    top: "27%",
+    top: "30%",
     width: "100%",
     borderBottomWidth: 4,
     borderBottomColor: "#D0C9E2",
