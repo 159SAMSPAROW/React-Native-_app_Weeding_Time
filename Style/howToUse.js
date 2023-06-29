@@ -5,6 +5,7 @@ const navbarHeight = 55;
 
 const howToUse = StyleSheet.create({
   style: {
+    height: "100%",
     minHeight: windowHeight - navbarHeight,
     backgroundColor: "#F5F5F5",
 

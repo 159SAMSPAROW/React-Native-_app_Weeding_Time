@@ -16,13 +16,7 @@ const homepage_card = StyleSheet.create({
     height: 4,
     backgroundColor: "#FFD1DC",
     width: "100%",
-    shadowColor: "#FFD1DC",
-    shadowOffset: {
-      width: 0,
-      height: 0,
-    },
-    shadowOpacity: 1,
-    shadowRadius: 10,
+    backgroundColor: "#D0C9E2",
   },
 
   banner: {
@@ -43,13 +37,7 @@ const homepage_card = StyleSheet.create({
     left: 15,
     borderWidth: 4,
     borderColor: "#D0C9E2",
-    shadowColor: "#D0C9E2",
-    shadowOffset: {
-      width: 0,
-      height: 0,
-    },
-    shadowOpacity: 1,
-    shadowRadius: 10,
+    
   },
 
   title: {
@@ -81,14 +69,6 @@ const homepage_card = StyleSheet.create({
     width: "100%",
     borderBottomWidth: 4,
     borderBottomColor: "#D0C9E2",
-    shadowColor: "#D0C9E2",
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
-    elevation: 5,
   },
 
   description: {

@@ -4,7 +4,7 @@ export const HomepageCardContent = [
         illustration: require("./assets/Images/Cocktail_Reception_illustration.jpg"),
         title: "Cocktail Reception",
         image: require("./assets/Images/Cocktail_Reception.jpg"),
-        description: "  Explore our proposals for cocktail pieces and Show cooking to personalize and make your cocktail after the weeding ceremony"
+        description: "Explore our proposals for cocktail pieces and Show cooking to personalize and make your cocktail after the weeding ceremony"
         
       }
     },
