@@ -16,7 +16,7 @@ export default function Navbar() {
   return (
     <View style={navbar_style.navbar}>
       <ImageBackground
-        source={require("../assets/navbar_Bg.jpg")}
+        source={require("../assets/Images/navbar_Bg.jpg")}
         style={navbar_style.navbar.bg}
       >
         <View style={navbar_style.navbar.container}>

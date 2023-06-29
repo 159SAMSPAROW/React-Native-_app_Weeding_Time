@@ -2,31 +2,85 @@ import { StyleSheet, Dimensions } from "react-native";
 const windowHeight = Dimensions.get("window").height;
 const navbarHeight = 55;
 
-
 const homepage_carousel = StyleSheet.create({
+  container: {
+    minHeight: windowHeight - navbarHeight,
+    backgroundColor: "rgba(76, 76, 76, 0.1)",
+    
+  },
 
-    container:{
-        minHeight: windowHeight - navbarHeight,
+  header: {
+    flexDirection: "row",
+    margin: 20,
+  },
+
+  h2: {
+    margin: 40,
+  },
+
+  carousel: {
+    height: 480,
+  },
+
+  carouselContainer: {
+    marginTop: 20,
+  },
+
+  swiper: {
+    dotStyle: {
+      backgroundColor: "#6753DB",
+      width: 80,
+      height: 3,
     },
 
-    header: {
-        flexDirection: "row",
-        margin: 20,
+    activeDotStyle: {
+      backgroundColor: "#C85BEA",
+      width: 85,
+      height: 3,
     },
-
-    h2:{
-        margin: 40, 
+    paginationStyle: {
+      bottom: -50,
     },
+  },
 
-    carousel: {
-      height: 400,  
-    },
+  carouselItemTitle: {
+    fontSize: 33,
+  },
 
-    background: {
-        width: "100%",
-        height: 450,
-        opacity: 0.2,
-    }
+  carouselItemDescription: {
+    width: 300,
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-around",
+    marginLeft: 60,
+    marginTop: 30,
+  },
+
+  carouselItemImage: {
+    width: 300,
+    height: 300,
+    marginTop: 50,
+    marginLeft: 60,
+    borderWidth: 3,
+    borderColor: "#C85BEA",
+    borderRadius: 140,
+  },
+  carouselItemIcon: {
+    width: 60,
+    height: 60,
+    borderRadius: 50,
+    borderColor: "#C85BEA",
+    borderWidth: 2,
+    backgroundColor: "#FFFFFF",
+  },
+  background: {
+    position: "absolute",
+    width: "100%",
+    height: windowHeight,
+    opacity: 0.1,
+    borderWidth: 2, // Ajoute une bordure de 2 pixels
+    borderColor: '#000000', // La couleur de la bordure est noire
+  },
 });
 
 export default homepage_carousel;

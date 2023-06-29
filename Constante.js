@@ -1,42 +1,42 @@
 export const HomepageCardContent = [
     {
       Cocktail: {
-        illustration: require("./assets/Cocktail_Reception_illustration.jpg"),
+        illustration: require("./assets/Images/Cocktail_Reception_illustration.jpg"),
         title: "Cocktail Reception",
-        image: require("./assets/Cocktail_Reception.jpg"),
+        image: require("./assets/Images/Cocktail_Reception.jpg"),
         description: "  Explore our proposals for cocktail pieces and Show cooking to personalize and make your cocktail after the weeding ceremony"
         
       }
     },
     {
       Meal: {
-        illustration: require("./assets/Weeding_Meal_illustration.webp"),
+        illustration: require("./assets/Images/Weeding_Meal_illustration.webp"),
         title: "Weeding Meal",
-        image: require("./assets/weedin_meal_menu.jpg"),
+        image: require("./assets/Images/weedin_meal_menu.jpg"),
         description: "Explore mouthwatering options and create an unforgettable culinary experience."
       }
     },
     {
       cake: {
-        illustration: require("./assets/Weedin_Cake_illustration.jpg"),
+        illustration: require("./assets/Images/Weedin_Cake_illustration.jpg"),
         title: "Weedin Cake",
-        image: require("./assets/Weeding_cake.png"),
+        image: require("./assets/Images/Weeding_cake.png"),
         description: "Explore mouthwatering options and create an unforgettable culinary experience."
       }
     },
     {
         after: {
-          illustration: require("./assets/After_Party_illustration.jpg"),
+          illustration: require("./assets/Images/After_Party_illustration.jpg"),
           title: "After Party",
-          image: require("./assets/After_party.webp"),
+          image: require("./assets/Images/After_party.webp"),
           description: "Explore mouthwatering options and create an unforgettable culinary experience."
         }
       },
       {
         drinks: {
-          illustration: require("./assets/Champagne.jpg"),
+          illustration: require("./assets/Images/Champagne.jpg"),
           title: "Drinks",
-          image: require("./assets/drinks.jpg"),
+          image: require("./assets/Images/drinks.jpg"),
           description: "Explore mouthwatering options and create an unforgettable culinary experience."
         }
       },
@@ -44,16 +44,25 @@ export const HomepageCardContent = [
   
 export const carouselItems = [
   {
-    title: "Item 1",
-    image: require("./assets/Table_ware.webp"),
-    icon: require("./assets/Table_ware_icon.jpg"),
+    title: "Tableware",
+    image: require("./assets/Images/Table_ware.webp"),
+    icon: require("./assets/Images/Table_ware_icon.jpg"),
   },
   {
-    title: "Item 2",
-    image: require("./assets/Decoration.webp"),
-    icon: require("./assets/Decoration_icon.png"),
+    title: "Decoration",
+    image: require("./assets/Images/Decoration.webp"),
+    icon: require("./assets/Images/Decoration_icon.png"),
   },
-  // Ajoutez plus d'éléments ici
+  {
+    title: "Flowers",
+    image: require("./assets/Images/Flowers_3.webp"),
+    icon: require("./assets/Images/Flower_icon.jpg"),
+  },
+  {
+    title: "Dj/Music",
+    image: require("./assets/Images/Dj_Music.webp"),
+    icon: require("./assets/Images/Dj_icon.jpg"),
+  },
 ];
   
   

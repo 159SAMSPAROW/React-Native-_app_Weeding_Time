@@ -22,7 +22,7 @@ const Hero_Section = () => {
       </View>
       <View style={heroStyle.divider} />
       <ImageBackground
-        source={require("../assets/Flowers.jpg")}
+        source={require("../assets/Images/Flowers.jpg")}
         style={heroStyle.background}
       ></ImageBackground>
       <View style={heroStyle.divider} />

@@ -26,7 +26,7 @@ const Homepage_card = () => {
               <View style={homepage_card.divider} />
               <ImageBackground
                 style={homepage_card.banner}
-                source={require("../assets/navbar_Bg.jpg")}
+                source={require("../assets/Images/navbar_Bg.jpg")}
               />
               <View style={homepage_card.divider} />
 

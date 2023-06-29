@@ -8,7 +8,7 @@ const HowToUse = () => {
   return (
     <View style={howToUse.style}>
       <ImageBackground
-        source={require("../assets/Flowers_Bg.jpg")}
+        source={require("../assets/Images/Flowers_Bg.jpg")}
         style={howToUse.backgroundImage}
       >
         <View style={howToUse.opacityLayer} />
