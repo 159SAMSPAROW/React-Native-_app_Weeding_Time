@@ -5,9 +5,9 @@ const navbar_style = StyleSheet.create({
   navbar: {
     height: 55,
     display: "flex",
-    borderWidth: 3,
-    borderColor: "lightgray",
-    borderStyle: "solid",
+    borderBottomWidth: 3,
+    borderBottomColor: "#6750A4",
+    borderBottomStyle: "solid",
 
     container: {
       flexDirection: "row",
@@ -17,10 +17,10 @@ const navbar_style = StyleSheet.create({
 
     logo: {
       marginLeft: 30,
-      fontSize: 40,
-      fontWeight: "bold",
+      fontSize: 28,
+
       color: "#6750A4",
-      fontFamily: "Arizonia-Regular",
+      fontFamily: "Pacifico",
     },
 
     bg: {

@@ -7,21 +7,26 @@ const homepage_card = StyleSheet.create({
   style: {
     flex: 1,
     minHeight: windowHeight - navbarHeight,
-    backgroundColor: "#F5F5F5",
+    borderBottomWidth: 15,
+    borderBottomColor: "#D0C9E2",
+    gradient: {
+      flex: 1,
+    },
   },
 
+  bg: {
+    height: "100%",
+  },
   header: { top: 40 },
 
   divider: {
     height: 4,
     backgroundColor: "#FFD1DC",
     width: "100%",
-    backgroundColor: "#D0C9E2",
   },
 
   banner: {
     height: 80,
-    opacity: 0.4,
   },
 
   titleContainer: {
@@ -37,7 +42,6 @@ const homepage_card = StyleSheet.create({
     left: 15,
     borderWidth: 4,
     borderColor: "#D0C9E2",
-    
   },
 
   title: {
@@ -63,37 +67,37 @@ const homepage_card = StyleSheet.create({
     width: "100%",
     height: 180,
     marginBottom: 5,
-    flexDirection: "row",
+    flexDirection: "column",
     justifyContent: "space-between",
-    top: "30%",
-    width: "100%",
-    borderBottomWidth: 4,
-    borderBottomColor: "#D0C9E2",
+    top: "23%",
+    left: "2%",
   },
 
   description: {
     width: "80%",
-    padding: 15,
+    padding: 5,
     fontSize: 20,
     color: "#462B47",
   },
 
   eyeContainer: {
-    padding: 15,
-    alignSelf: "flex-end",
+    top: "2%",
+    flexDirection: "row",
     alignItems: "center",
+    justifyContent: "center",
   },
 
   eye: {
-    fontSize: 30,
-    color: "#C654E9",
+    fontSize: 35,
+    marginRight: 5,
+    color: "#FFFFFF",
   },
 
   clickText: {
     textAlign: "center",
     fontWeight: "bold",
-    fontSize: 14,
-    color: "#C654E9",
+    fontSize: 22,
+    color: "#FFFFFF",
   },
 });
 export default homepage_card;

@@ -6,9 +6,8 @@ const navbarHeight = 55;
 
 const heroStyle = StyleSheet.create({
   header: {
-    backgroundColor: "#F5F5F5",
     flex: 1,
-    minHeight: windowHeight - navbarHeight,
+    height: windowHeight - navbarHeight,
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
@@ -18,18 +17,24 @@ const heroStyle = StyleSheet.create({
     shadowRadius: 3.84,
     elevation: 5,
   },
-  white_space: {
+
+  bg: {
+    height: "100%",
+  },
+
+  white_spaceTop: {
+    top: 15,
+    height: 80,
     display: "flex",
     flexDirection: "row",
     justifyContent: "center",
-    marginTop: 10,
   },
+
   stars: {
-    marginTop: 12,
-    marginBottom: 20,
-    fontSize: 20,
+    top: 15,
+    fontSize: 30,
     color: "#462B47",
-    opacity: 0.3,
+    
   },
 
   divider: {
@@ -45,8 +50,8 @@ const heroStyle = StyleSheet.create({
 
   h1: {
     textAlign: "center",
-    color: "#462B48",
-    fontSize: 33,
+    color: "#462B47",
+    fontSize: 53,
     lineHeight: 80,
     fontFamily: "Alegreya-Sans-SC",
   },

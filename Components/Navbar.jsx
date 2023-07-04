@@ -7,6 +7,7 @@ import Icon from "react-native-vector-icons/MaterialIcons";
 export default function Navbar() {
   let [fontsLoaded] = useFonts({
     "Arizonia-Regular": require("../assets/fonts/Arizonia-Regular.ttf"),
+    "Pacifico": require("../assets/fonts/Pacifico-Regular.ttf"),
   });
 
   if (!fontsLoaded) {
@@ -15,10 +16,7 @@ export default function Navbar() {
 
   return (
     <View style={navbar_style.navbar}>
-      <ImageBackground
-        source={require("../assets/Images/navbar_Bg.jpg")}
-        style={navbar_style.navbar.bg}
-      >
+     
         <View style={navbar_style.navbar.container}>
           <Text style={navbar_style.navbar.logo}>Weeding Time</Text>
           <Icon name="menu" style={navbar_style.navbar.burgerMenu} />
@@ -27,7 +25,7 @@ export default function Navbar() {
             style={navbar_style.navbar.account_circle}
           />
         </View>
-      </ImageBackground>
+    
     </View>
   );
 }

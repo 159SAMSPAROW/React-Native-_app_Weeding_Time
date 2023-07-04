@@ -3,6 +3,7 @@ const windowHeight = Dimensions.get("window").height;
 const navbarHeight = 55;
 
 const homepage_carousel = StyleSheet.create({
+
   container: {
     minHeight: windowHeight - navbarHeight,
     backgroundColor: "rgba(76, 76, 76, 0.1)",
@@ -32,7 +33,6 @@ const homepage_carousel = StyleSheet.create({
       width: 80,
       height: 3,
     },
-
     activeDotStyle: {
       backgroundColor: "#C85BEA",
       width: 85,

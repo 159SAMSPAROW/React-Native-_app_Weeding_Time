@@ -8,12 +8,10 @@ const HowToUse = () => {
   return (
     <View style={howToUse.style}>
       <ImageBackground
-        source={require("../assets/Images/Flowers_Bg.jpg")}
+        source={require("../assets/Images/water_color_bg.jpg")}
         style={howToUse.backgroundImage}
       >
-        <View style={howToUse.opacityLayer} />
-      </ImageBackground>
-      <View style={howToUse.content}>
+      <View>
         <Text style={[styles.h2, howToUse.h2]}>HOW DOES IT WORK</Text>
 
         <View style={howToUse.list}>
@@ -68,6 +66,7 @@ const HowToUse = () => {
 
         <Text style={[styles.h2, howToUse.h2]}>AND THERE YOU GO</Text>
       </View>
+      </ImageBackground>
     </View>
   );
 };

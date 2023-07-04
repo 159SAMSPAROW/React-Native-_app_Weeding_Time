@@ -7,27 +7,7 @@ const howToUse = StyleSheet.create({
   style: {
     height: "100%",
     minHeight: windowHeight - navbarHeight,
-    backgroundColor: "#F5F5F5",
-
     alignItems: "center",
-  },
-
-  backgroundImage: {
-    position: "absolute",
-    top: 0,
-    width: "100%",
-    height: "100%",
-  },
-
-  opacityLayer: {
-    backgroundColor: "#ffffff",
-    opacity: 0.1,
-    width: "100%",
-    height: "100%",
-  },
-
-  content: {
-    zIndex: 1,
   },
 
   h2: {
@@ -49,7 +29,7 @@ const howToUse = StyleSheet.create({
     margin: 10,
     marginBottom: 20,
     alignSelf: "flex-start",
-    flexDirection: "row", // Ajoutez cette ligne
+    flexDirection: "row",
     alignItems: "center",
   },
 
@@ -65,7 +45,7 @@ const howToUse = StyleSheet.create({
     backgroundColor: "#EADDFF",
     justifyContent: "center",
     alignItems: "center",
-    marginRight: 10, // Ajoutez cette ligne pour ajouter de l'espace entre le cercle et le texte
+    marginRight: 10,
   },
 
   number: {
