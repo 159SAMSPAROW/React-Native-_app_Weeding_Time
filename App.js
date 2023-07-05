@@ -7,6 +7,7 @@ import Hero_Section from "./Components/Hero_Section";
 import Homepage_Card from "./Components/Homepage_Card";
 import HowToUse from "./Components/HowToUse";
 import Homepage_carousel from "./Components/Homepage_carousel";
+import Footer from "./Components/Footer";
 
 export default function App() {
   // Obtenez la hauteur de l'écran
@@ -24,6 +25,7 @@ export default function App() {
         <Homepage_Card />
         <Homepage_carousel/>
         <HowToUse />
+        <Footer />
       </ScrollView>
       <StatusBar style="auto" />
     </SafeAreaView>
