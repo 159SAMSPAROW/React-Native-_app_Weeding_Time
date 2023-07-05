@@ -1,10 +1,5 @@
-
-import {
-  View,
-  Text,
-  ImageBackground,
-  Image,
-} from "react-native";
+import { View, Text, ImageBackground, Image } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 import { useFonts } from "expo-font";
 import Icon from "react-native-vector-icons/MaterialIcons";
@@ -16,8 +11,9 @@ import { LinearGradient } from "expo-linear-gradient";
 import GlobalButton from "./GlobalButton";
 import { globalButton } from "../Style/button";
 
-
 const Homepage_card = () => {
+  const navigation = useNavigation();
+
   let [fontsLoaded] = useFonts({
     "Alegreya-Sans-SC": require("../assets/fonts/AlegreyaSansSC-Regular.ttf"),
   });
@@ -33,7 +29,12 @@ const Homepage_card = () => {
         const category = item[categoryKey];
 
         return (
-          <View style={homepage_card.style} key={index}>
+          <View
+            style={homepage_card.style}
+            key={index}
+            category={category}
+            navigateToPage={() => navigation.navigate("WeedingMealPage")}
+          >
             <LinearGradient
               colors={["#E4D1DE", "#FFFFFF", "#B3C6D1"]}
               style={homepage_card.style.gradient}
@@ -64,15 +65,15 @@ const Homepage_card = () => {
                     {category.description}
                   </Text>
                   <GlobalButton
-                  style={globalButton.button}
-                  title="Click"
-                    onPress={() => {
-                      console.log("Button pressed");
-                    }}
+                    style={globalButton.button}
+                    title="Click"
+                    onPress={() => navigation.navigate("WeedingMealPage")}
                   >
                     <View style={homepage_card.eyeContainer}>
                       <Icon style={homepage_card.eye} name="visibility" />
-                      <Text style={homepage_card.clickText}>Click to See More</Text>
+                      <Text style={homepage_card.clickText}>
+                        Click to See More
+                      </Text>
                     </View>
                   </GlobalButton>
                 </View>
