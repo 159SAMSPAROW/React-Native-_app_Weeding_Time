@@ -1,26 +1,25 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import HomePage from "./Pages/Homepage";
+import Homepage from "./Pages/Homepage";
 import WeedingMealPage from "./Pages/WeedingMealPage";
 import appNavigator from "./Style/appNavigator";
 const Stack = createStackNavigator();
 
 function AppNavigator() {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator  screenOptions={{
+      headerTitleContainerStyle: appNavigator.textStyle,
+      headerStyle: appNavigator.containerStyle,
+      headerLeftContainerStyle: appNavigator.backButtonStyle,
+      headerBackTitleStyle: appNavigator.backButtonTextStyle,
+      headerTintColor:"#6750A4",
+    }}>
       <Stack.Screen
-        options={{
-          headerTitleContainerStyle: appNavigator.textStyle,
-          headerStyle: appNavigator.containerStyle,
-        }}
+       
         name="HomePage"
-        component={HomePage}
+        component={Homepage}
       />
       <Stack.Screen
-        options={{
-          headerTitleContainerStyle: appNavigator.textStyle,
-          headerStyle: appNavigator.containerStyle,
-        }}
         name="WeedingMealPage"
         component={WeedingMealPage}
       />
