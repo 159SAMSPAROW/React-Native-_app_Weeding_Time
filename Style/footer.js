@@ -1,9 +1,10 @@
-import { StyleSheet, Dimensions } from "react-native";
+import { StyleSheet, } from "react-native";
 
 export const footer = StyleSheet.create({
   footerSection: {
     backgroundColor: "#6750A4",
     alignItems: "center",
+    marginTop: -105,
   },
 
   footerLink: {

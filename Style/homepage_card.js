@@ -5,7 +5,6 @@ const navbarHeight = 55;
 
 const homepage_card = StyleSheet.create({
   style: {
-    flex: 1,
     minHeight: windowHeight - navbarHeight,
     borderBottomWidth: 15,
     borderBottomColor: "#D0C9E2",
@@ -58,7 +57,7 @@ const homepage_card = StyleSheet.create({
   image: {
     width: "100%",
     height: 350,
-    top: "20%",
+    top: "15%",
     borderWidth: 5,
     borderColor: "#FFD1DC",
   },
@@ -69,7 +68,7 @@ const homepage_card = StyleSheet.create({
     marginBottom: 5,
     flexDirection: "column",
     justifyContent: "space-between",
-    top: "23%",
+    top: "20%",
     left: "2%",
   },
 

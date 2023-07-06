@@ -8,6 +8,10 @@ const navbar_style = StyleSheet.create({
     borderBottomWidth: 3,
     borderBottomColor: "#6750A4",
     borderBottomStyle: "solid",
+    borderTopWidth: 3,
+    borderTopColor: "#6750A4",
+    borderTopStyle: "solid",
+    backgroundColor: "#FFFFFF",
 
     container: {
       flexDirection: "row",

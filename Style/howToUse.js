@@ -9,8 +9,11 @@ const howToUse = StyleSheet.create({
     alignItems: "center",
   },
 
+  backgroundImage:{
+    height: "auto",
+  },
   h2: {
-    margin: 35,
+    margin: 30,
   },
 
   list: {
@@ -20,13 +23,12 @@ const howToUse = StyleSheet.create({
     borderWidth: 2,
     borderColor: "#462B48",
     borderRadius: 10,
-    paddingTop: 20,
-    paddingBottom: 20,
+    paddingTop: 10,
+    paddingBottom: 10,
   },
 
   listItem: {
-    margin: 10,
-    marginBottom: 20,
+    margin: 15,
     alignSelf: "flex-start",
     flexDirection: "row",
     alignItems: "center",
