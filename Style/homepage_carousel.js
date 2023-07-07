@@ -1,11 +1,11 @@
 import { StyleSheet, Dimensions } from "react-native";
-const windowHeight = Dimensions.get("window").height;
+const screenHeight = Dimensions.get("window").height;
 const navbarHeight = 55;
 
 const homepage_carousel = StyleSheet.create({
 
   container: {
-    minHeight: windowHeight - navbarHeight,
+    minHeight: screenHeight - navbarHeight,
     backgroundColor: "rgba(76, 76, 76, 0.1)",
     
   },
@@ -76,7 +76,7 @@ const homepage_carousel = StyleSheet.create({
   background: {
     position: "absolute",
     width: "100%",
-    height: windowHeight,
+    height: screenHeight,
     opacity: 0.1,
     borderWidth: 2, // Ajoute une bordure de 2 pixels
     borderColor: '#000000', // La couleur de la bordure est noire

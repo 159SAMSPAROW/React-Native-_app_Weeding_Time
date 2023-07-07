@@ -1,11 +1,11 @@
 import { StyleSheet, Dimensions } from "react-native";
 
-const windowHeight = Dimensions.get("window").height;
+const screenHeight = Dimensions.get("window").height;
 const navbarHeight = 55;
 
 export const weedingForm = StyleSheet.create({
   formSection: {
-    minHeight: windowHeight - navbarHeight,
+    minHeight: screenHeight - navbarHeight,
     width: "100%",
     alignItems: "center",
   },
@@ -80,7 +80,6 @@ export const weedingForm = StyleSheet.create({
     borderColor: "#FFFFFF",
     borderRadius: 5,
   },
-
   calendarIcon: {
     position: "absolute",
     top: 8,
@@ -91,8 +90,7 @@ export const weedingForm = StyleSheet.create({
     width: 150,
     height: 50,
     flexDirection: "row-reverse",
-    alignItems: "center",
-    backgroundColor: "transparent",
+    
     borderWidth: 3,
     borderColor: "#FFFFFF",
     borderRadius: 5,

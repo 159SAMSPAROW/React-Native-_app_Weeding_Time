@@ -1,11 +1,11 @@
 import { StyleSheet, Dimensions } from "react-native";
 
-const windowHeight = Dimensions.get("window").height;
+const screenHeight = Dimensions.get("window").height;
 const navbarHeight = 55;
 
 const homepage_card = StyleSheet.create({
   style: {
-    minHeight: windowHeight - navbarHeight,
+    minHeight: screenHeight - navbarHeight,
     borderBottomWidth: 15,
     borderBottomColor: "#D0C9E2",
     gradient: {

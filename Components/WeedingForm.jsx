@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { View, Text, TextInput, Button, ImageBackground } from "react-native";
-import { weedingForm, datePickerCustomStyles } from "../Style/weedingForm";
+import { weedingForm } from "../Style/weedingForm";
 import Icon from "react-native-vector-icons/FontAwesome";
 import StarIcon from "react-native-vector-icons/MaterialIcons";
 import DateTimePicker from "@react-native-community/datetimepicker";

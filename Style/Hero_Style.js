@@ -1,13 +1,13 @@
 import { StyleSheet, Dimensions } from "react-native";
 
-const windowHeight = Dimensions.get("window").height;
+const screenHeight = Dimensions.get("window").height;
 const navbarHeight = 55;
-//console.log(windowHeight);
+//console.log(screenHeight);
 
 const heroStyle = StyleSheet.create({
   header: {
     flex: 1,
-    height: windowHeight - navbarHeight,
+    height: screenHeight - navbarHeight,
   },
 
   bg: {

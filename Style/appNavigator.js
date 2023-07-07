@@ -4,7 +4,8 @@ const appNavigator = StyleSheet.create({
 
   textStyle: {
     alignSelf: 'flexStart',
-    marginLeft: "50%",
+    marginLeft: "60%",
+    color: "#50CC98",
   },
 
   containerStyle: {
@@ -14,7 +15,7 @@ const appNavigator = StyleSheet.create({
     alignSelf: 'flexStart', 
   },
   backButtonTextStyle: {
-    color: "#6750A4",
+    color: "#50CC98",
     marginBottom: 5,
     fontWeight: "bold", 
     fontSize: 16, 
