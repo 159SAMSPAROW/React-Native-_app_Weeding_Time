@@ -5,9 +5,8 @@ const navbarHeight = 55;
 
 const weedingMeal_Card = StyleSheet.create({
   style: {
+    flex: 1,
     minHeight: screenHeight - navbarHeight,
-    borderBottomWidth: 15,
-    borderBottomColor: "#D0C9E2",
   },
 
   header: {
@@ -38,7 +37,7 @@ const weedingMeal_Card = StyleSheet.create({
     textDecorationLine: "underline",
   },
   carousel: {
-    top: 75,
+    top: 50,
     alignItems: "center",
   },
   carouselImage: {
@@ -47,67 +46,103 @@ const weedingMeal_Card = StyleSheet.create({
     borderRadius: 10,
     borderColor: "#FFD1DC",
     borderWidth: 3,
-    resizeMode: "cover",
     marginLeft: -37,
   },
 
   description: {
-    top: 20,
-    height: 250,
+    top: 10,
+    right: 20,
+    width: 230,
   },
   description1: {
-    fontSize: 20,
-    width: 350,
-    marginLeft: "10%",
+    fontSize: 14,
     color: "#462B48",
     letterSpacing: 5,
-    lineHeight: 30,
+    lineHeight: 20,
   },
   price: {
-    top: 75,
-    left: 330,
-    fontSize: 22,
-    color: "#462B48",
-  },
-  description2: {
-    color: "#50CC98",
+    left: 190,
+    bottom: 15,
     fontSize: 18,
+    color: "#50CC98",
     fontWeight: "bold",
-    margin: "4%",
+  },
+  veganOption: {
+    color: "#50CC98",
+    fontSize: 20,
+    fontWeight: "bold",
   },
 
-  allergensContainer: {
-    position: "absolute",
-    left: 20,
-    bottom: -50,
-  },
+  allergensContainer: {},
 
   allergensButton: {
-    fontSize: 22,
+    marginLeft: 30,
+    marginTop: 15,
+    fontSize: 20,
     color: "#50CC98",
+    fontWeight: "bold",
+    width: "100%",
   },
-  allergensList: {},
-  allergenItem: { fontSize: 20 },
+  allergensList: {
+    flexDirection: "row",
+    justifyContent: "center",
+    width: "100%",
+    margin: 10,
+  },
+  allergenItem: {
+    margin: 5,
+    fontSize: 20,
+    color: "red",
+  },
 
   buttonContainer: {
-    top: 140,
+    width: 280,
+    marginTop: 30,
+    marginLeft: -37,
   },
 
   button: {
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
+    padding: 10,
+    height: 50,
   },
   iconButton: {
-   fontSize: 40,
-   marginRight: 20,
-   marginTop: 2,
-   color: "#FFFFFF",
-  },
-  textButton:{
-    fontSize: 22,
-    marginTop: 2,
+    fontSize: 30,
+    marginRight: 20,
+    marginLeft: -10,
     color: "#FFFFFF",
+  },
+  textButton: {
+    fontSize: 22,
+    color: "#FFFFFF",
+  },
+  bottomContainer: {
+    flex: 1,
+    marginBottom: 150,
+  },
+  bottomText: {
+    margin: 20,
+    fontSize: 20,
+    letterSpacing: 5,
+    textAlign: "center",
+  },
+  bottomConfirmButton: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    padding: 10,
+  },
+  bottomGtcLink: {
+    textAlign: "center", 
+    textDecorationLine: "underline", 
+    fontWeight: "500",
+    marginLeft: 2,
+    marginRight: 2,
+    marginBottom: 20,
+    fontSize: 20,
+    letterSpacing: 5,
   },
 });
 export default weedingMeal_Card;

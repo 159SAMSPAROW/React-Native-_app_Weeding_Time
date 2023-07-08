@@ -1,10 +1,11 @@
 import { StyleSheet, Dimensions } from "react-native";
 const screenHeight = Dimensions.get("window").height;
-const navbarHeight = 55;
+const navbarHeight = 62;
 
 const homepage_carousel = StyleSheet.create({
 
   container: {
+    flex: 1,
     minHeight: screenHeight - navbarHeight,
     backgroundColor: "rgba(76, 76, 76, 0.1)",
     
@@ -12,13 +13,14 @@ const homepage_carousel = StyleSheet.create({
 
   header: {
     flexDirection: "row",
-    margin: 20,
+    margin: 40,
+    top: 25,
   },
 
   h2: {
     margin: 40,
   },
-
+ 
   carousel: {
     height: 480,
   },
@@ -39,7 +41,7 @@ const homepage_carousel = StyleSheet.create({
       height: 3,
     },
     paginationStyle: {
-      bottom: -50,
+      bottom: -10,
     },
   },
 

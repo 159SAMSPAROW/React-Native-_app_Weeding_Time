@@ -35,12 +35,7 @@ const Homepage_card = () => {
             category={category}
             navigateToPage={() => navigation.navigate("WeedingMealPage")}
           >
-            <LinearGradient
-              colors={["#E4D1DE", "#FFFFFF", "#B3C6D1"]}
-              style={homepage_card.style.gradient}
-              start={{ x: 0, y: 0 }}
-              end={{ x: 1, y: 1 }}
-            >
+          
               <View style={homepage_card.header}>
                 <View style={homepage_card.divider} />
                 <ImageBackground
@@ -78,7 +73,7 @@ const Homepage_card = () => {
                   </GlobalButton>
                 </View>
               </View>
-            </LinearGradient>
+    
           </View>
         );
       })}

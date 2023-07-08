@@ -73,33 +73,39 @@ export const WeedingMealCard = [
   {
     Starter: {
       title: "Starter",
-      images: [
+      subCategory: [
         {
-          path: require("./assets/Images/starter_1.jpg"),
-          description:
-            "Green Asparagus Ice Cream, Sesame-Crusted Medium-Rare Salmon",
-          vegan: true,
-          allergens: ["gluten", "lactose", "fruits de mer"],
-          price: "20€",
-          selected: false,
+          subCategoryItem: {
+            path: require("./assets/Images/starter_1.jpg"),
+            description:
+              "Green Asparagus Ice Cream, Sesame-Crusted Medium-Rare Salmon",
+            vegan: true,
+            allergens: ["gluten", "lactose", "fruits de mer"],
+            price: "20€",
+            selected: false,
+          },
         },
         {
-          path: require("./assets/Images/starter_2.jpg"),
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-          vegan: false,
-          allergens: ["gluten", "lactose", "fruits de mer"],
-          price: "20€",
-          selected: false,
+          subCategoryItem: {
+            path: require("./assets/Images/starter_2.jpg"),
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+            vegan: false,
+            allergens: ["gluten", "lactose", "fruits de mer"],
+            price: "20€",
+            selected: false,
+          },
         },
         {
-          path: require("./assets/Images/starter_3.jpg"),
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-          vegan: false,
-          allergens: ["gluten", "lactose", "fruits de mer"],
-          price: "20€",
-          selected: false,
+          subCategoryItem: {
+            path: require("./assets/Images/starter_3.jpg"),
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+            vegan: false,
+            allergens: ["gluten", "lactose", "fruits de mer"],
+            price: "20€",
+            selected: false,
+          },
         },
       ],
     },
@@ -107,32 +113,39 @@ export const WeedingMealCard = [
   {
     MainCourse: {
       title: "MainCourse",
-      images: [
+      subCategory: [
         {
-          path: require("./assets/Images/mainCourse_1.jpg"),
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-          vegan: false,
-          allergens: ["gluten", "lactose", "fruits de mer"],
-          price: "20€",
-          selected: false,
+          subCategoryItem: {
+            path: require("./assets/Images/mainCourse_1.jpg"),
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+            vegan: false,
+            allergens: ["gluten", "lactose", "fruits de mer"],
+            price: "20€",
+            selected: false,
+          },
         },
         {
-          path: require("./assets/Images/mainCourse_2.jpg"),
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-          vegan: true,
-          allergens: ["gluten", "lactose", "fruits de mer"],
-          price: "20€",
-          selected: false,
+          subCategoryItem: {
+            path: require("./assets/Images/mainCourse_2.jpg"),
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+            vegan: true,
+            allergens: ["gluten", "lactose", "fruits de mer"],
+            price: "20€",
+            selected: false,
+          },
         },
         {
-          path: require("./assets/Images/mainCourse_3.jpg"),
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-          vegan: false,
-          price: "20€",
-          selected: false,
+          subCategoryItem: {
+            path: require("./assets/Images/mainCourse_3.jpg"),
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+            vegan: false,
+            allergens: ["gluten", "lactose", "fruits de mer"],
+            price: "20€",
+            selected: false,
+          },
         },
       ],
     },
@@ -140,33 +153,39 @@ export const WeedingMealCard = [
   {
     Cheese: {
       title: "Cheese",
-      images: [
+      subCategory: [
         {
-          path: require("./assets/Images/cheese_1.jpg"),
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-          vegan: false,
-          allergens: ["gluten", "lactose", "fruits de mer"],
-          price: "20€",
-          selected: false,
+          subCategoryItem: {
+            path: require("./assets/Images/cheese_1.jpg"),
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+            vegan: false,
+            allergens: ["gluten", "lactose", "fruits de mer"],
+            price: "20€",
+            selected: false,
+          },
         },
         {
-          path: require("./assets/Images/cheese_2.jpg"),
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-          vegan: true,
-          allergens: ["gluten", "lactose", "fruits de mer"],
-          price: "20€",
-          selected: false,
+          subCategoryItem: {
+            path: require("./assets/Images/cheese_2.jpg"),
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+            vegan: true,
+            allergens: ["gluten", "lactose", "fruits de mer"],
+            price: "20€",
+            selected: false,
+          },
         },
         {
-          path: require("./assets/Images/cheese_3.jpg"),
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-          vegan: false,
-          allergens: ["gluten", "lactose", "fruits de mer"],
-          price: "20€",
-          selected: false,
+          subCategoryItem: {
+            path: require("./assets/Images/cheese_3.jpg"),
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+            vegan: false,
+            allergens: ["gluten", "lactose", "fruits de mer"],
+            price: "20€",
+            selected: false,
+          },
         },
       ],
     },
@@ -174,33 +193,39 @@ export const WeedingMealCard = [
   {
     Dessert: {
       title: "Dessert",
-      images: [
+      subCategory: [
         {
-          path: require("./assets/Images/dessert_1.jpg"),
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-          vegan: true,
-          allergens: ["gluten", "lactose", "fruits de mer"],
-          price: "20€",
-          selected: false,
+          subCategoryItem: {
+            path: require("./assets/Images/dessert_1.jpg"),
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+            vegan: true,
+            allergens: ["gluten", "lactose", "fruits de mer"],
+            price: "20€",
+            selected: false,
+          },
         },
         {
-          path: require("./assets/Images/dessert_2.jpg"),
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-          vegan: false,
-          allergens: ["gluten", "lactose", "fruits de mer"],
-          price: "20€",
-          selected: false,
+          subCategoryItem: {
+            path: require("./assets/Images/dessert_2.jpg"),
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+            vegan: false,
+            allergens: ["gluten", "lactose", "fruits de mer"],
+            price: "20€",
+            selected: false,
+          },
         },
         {
-          path: require("./assets/Images/dessert_3.jpg"),
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-          vegan: true,
-          allergens: ["gluten", "lactose", "fruits de mer"],
-          price: "20€",
-          selected: false,
+          subCategoryItem: {
+            path: require("./assets/Images/dessert_3.jpg"),
+            description:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+            vegan: true,
+            allergens: ["gluten", "lactose", "fruits de mer"],
+            price: "20€",
+            selected: false,
+          },
         },
       ],
     },
