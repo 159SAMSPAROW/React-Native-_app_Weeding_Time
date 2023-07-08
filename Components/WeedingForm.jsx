@@ -12,7 +12,7 @@ const WeedingForm = () => {
   const [weddingDate, setWeddingDate] = useState(new Date());
 
   const handleFormSubmit = () => {
-    // Effectuer des actions avec les données du formulaire
+
     console.log("WeedingName:", WeedingName);
     console.log("Address:", address);
     console.log("Guest Count:", guestCount);

@@ -10,8 +10,7 @@ const Signup = () => {
   const navigation = useNavigation();
 
   const handlePress = (routeName) => {
-    // Ici, vous pouvez ajouter votre logique pour se connecter via le compte utilisateur
-    // Pour le moment, cela navigue simplement vers la page spécifiée
+   
     navigation.navigate(routeName);
   };
 

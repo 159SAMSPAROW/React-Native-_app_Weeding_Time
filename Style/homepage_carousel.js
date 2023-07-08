@@ -80,8 +80,8 @@ const homepage_carousel = StyleSheet.create({
     width: "100%",
     height: screenHeight,
     opacity: 0.1,
-    borderWidth: 2, // Ajoute une bordure de 2 pixels
-    borderColor: '#000000', // La couleur de la bordure est noire
+    borderWidth: 2, 
+    borderColor: '#000000', 
   },
 });
 

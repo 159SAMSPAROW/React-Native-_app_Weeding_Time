@@ -2,7 +2,7 @@ import { StyleSheet, Dimensions } from "react-native";
 
 const screenHeight = Dimensions.get("window").height;
 const navbarHeight = 62;
-//console.log(screenHeight);
+
 
 const heroStyle = StyleSheet.create({
   header: {
