@@ -2,6 +2,8 @@ import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import Homepage from "./Pages/Homepage";
 import WeedingMealPage from "./Pages/WeedingMealPage";
+import AuthPage from "./Pages/AuthPage";
+
 import appNavigator from "./Style/appNavigator";
 const Stack = createStackNavigator();
 
@@ -22,6 +24,10 @@ function AppNavigator() {
       <Stack.Screen
         name="WeedingMealPage"
         component={WeedingMealPage}
+      />
+       <Stack.Screen
+        name="AuthPage"
+        component={AuthPage}
       />
     </Stack.Navigator>
   );
