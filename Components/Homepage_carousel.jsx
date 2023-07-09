@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ImageBackground, View, Text, Image, Dimensions } from "react-native";
-import Swiper from "react-native-swiper";
+import SwiperFlatList from "react-native-swiper";
 
 import homepage_carousel from "../Style/homepage_carousel";
 import { styles } from "../Style/global_style";
@@ -28,7 +28,7 @@ const Homepage_carousel = ({ item, index }) => {
         />
 
         <View style={homepage_carousel.carousel}>
-          <Swiper
+          <SwiperFlatList
             style={homepage_carousel.swiper}
             showsPagination={true}
             loop={false}
@@ -54,7 +54,7 @@ const Homepage_carousel = ({ item, index }) => {
                 </View>
               </View>
             ))}
-          </Swiper>
+          </SwiperFlatList>
         </View>
       </View>
     </View>
