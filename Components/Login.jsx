@@ -27,10 +27,10 @@ const Login = () => {
       return;
     }
 
-    // If email is valid, proceed with login
+
     console.log("Login successful");
 
-    // Navigate to Homepage
+ 
     navigation.navigate("HomePage");
   };
 

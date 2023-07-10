@@ -41,7 +41,7 @@ const Signup = () => {
       Alert.alert('Terms not accepted', 'Please accept the terms of use and privacy to proceed.');
       return;
     }
-
+    navigation.navigate("HomePage")
     console.log("signup work");
   };
   return (
