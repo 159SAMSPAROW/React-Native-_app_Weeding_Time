@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, Text, TouchableOpacity, TextInput, Button } from "react-native";
+import { View, Text, TouchableOpacity, TextInput, Alert } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
 import Icon2 from "react-native-vector-icons/FontAwesome";
 import { CheckBox } from "react-native-elements";
@@ -21,7 +21,38 @@ const Signup = () => {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [termsAccepted, setTermsAccepted] = useState(false);
 
+  
+  const validateEmail = (email) => {
+    const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return regex.test(email);
+  };
+
+  const validatePassword = (password) => {
+    const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    return regex.test(password);
+  };
+
   const handleSignup = () => {
+    if (!validateEmail(email)) {
+      Alert.alert('Invalid email', 'Please enter a valid email.');
+      return;
+    }
+
+    if (!validatePassword(password)) {
+      Alert.alert('Invalid password', 'Password should contain at least 8 characters, one uppercase, one lowercase, one number and one special character.');
+      return;
+    }
+
+    if (password !== confirmPassword) {
+      Alert.alert('Passwords do not match', 'Please make sure your passwords match.');
+      return;
+    }
+
+    if (!termsAccepted) {
+      Alert.alert('Terms not accepted', 'Please accept the terms of use and privacy to proceed.');
+      return;
+    }
+
     console.log("signup work");
   };
   return (
@@ -98,6 +129,7 @@ const Signup = () => {
           <GlobalButton
             style={globalButton.button}
             title="Click"
+            onPress={handleSignup}
           >
             <Text style={signup.clickText}>Register</Text>
           </GlobalButton>
