@@ -5,7 +5,7 @@ import Icon2 from "react-native-vector-icons/FontAwesome";
 import { CheckBox } from "react-native-elements";
 
 import { useNavigation } from "@react-navigation/native";
-import signup from "../Style/signup";
+import log from "../Style/log";
 import { styles } from "../Style/global_style";
 import { globalButton } from "../Style/button";
 import GlobalButton from "./GlobalButton";
@@ -21,25 +21,14 @@ const Signup = () => {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [termsAccepted, setTermsAccepted] = useState(false);
 
-  
   const validateEmail = (email) => {
     const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     return regex.test(email);
   };
 
-  const validatePassword = (password) => {
-    const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-    return regex.test(password);
-  };
-
   const handleSignup = () => {
     if (!validateEmail(email)) {
       Alert.alert('Invalid email', 'Please enter a valid email.');
-      return;
-    }
-
-    if (!validatePassword(password)) {
-      Alert.alert('Invalid password', 'Password should contain at least 8 characters, one uppercase, one lowercase, one number and one special character.');
       return;
     }
 
@@ -56,82 +45,82 @@ const Signup = () => {
     console.log("signup work");
   };
   return (
-    <View style={signup.style}>
-      <View style={signup.header}>
+    <View style={log.style}>
+      <View style={log.header}>
         <Text style={styles.h2}>Create Account</Text>
       </View>
-      <View style={signup.buttonContainer}>
+      <View style={log.buttonContainer}>
         <TouchableOpacity
-          style={signup.facebookButton}
+          style={log.facebookButton}
           onPress={() => handlePress("FacebookAuth")}
         >
-          <View style={signup.socialButtonContent}>
+          <View style={log.socialButtonContent}>
             <Icon name="facebook" size={30} color="#6750A4" />
-            <Text style={signup.socialButtonText}>Connect with Facebook</Text>
+            <Text style={log.socialButtonText}>Connect with Facebook</Text>
           </View>
         </TouchableOpacity>
 
         <TouchableOpacity
-          style={signup.googleButton}
+          style={log.googleButton}
           onPress={() => handlePress("GoogleAuth")}
         >
-          <View style={signup.socialButtonContent}>
+          <View style={log.socialButtonContent}>
             <Icon2 name="google" size={30} color="#6750A4" />
-            <Text style={signup.socialButtonText}>Connect with Google</Text>
+            <Text style={log.socialButtonText}>Connect with Google</Text>
           </View>
         </TouchableOpacity>
 
         <TouchableOpacity
-          style={signup.appleButton}
+          style={log.appleButton}
           onPress={() => handlePress("AppleAuth")}
         >
-          <View style={signup.socialButtonContent}>
+          <View style={log.socialButtonContent}>
             <Icon2 name="apple" size={30} color="#6750A4" />
-            <Text style={signup.socialButtonText}>Connect with Apple</Text>
+            <Text style={log.socialButtonText}>Connect with Apple</Text>
           </View>
         </TouchableOpacity>
       </View>
 
-      <View style={signup.subscribeContainer}>
+      <View style={log.subscribeContainer}>
         <Text style={styles.h2}>Subscribe by Email</Text>
-        <View style={signup.subscribeInputContainer}>
+        <View style={log.subscribeInputContainer}>
           <TextInput
             value={email}
             onChangeText={setEmail}
             placeholder="Email"
             autoCapitalize="none"
-            style={signup.subscribeInputPlaceholder}
+            style={log.subscribeInputPlaceholder}
           />
           <TextInput
             value={password}
             onChangeText={setPassword}
             placeholder="Password"
             secureTextEntry
-            style={signup.subscribeInputPlaceholder}
+            style={log.subscribeInputPlaceholder}
           />
           <TextInput
             value={confirmPassword}
             onChangeText={setConfirmPassword}
             placeholder="Confirm Password"
             secureTextEntry
-            style={signup.subscribeInputPlaceholder}
+            style={log.subscribeInputPlaceholder}
           />
-          <View style={signup.subscribeCheckbox}>
+          <View style={log.subscribeCheckbox}>
             <CheckBox
               checked={termsAccepted}
               onPress={() => setTermsAccepted(!termsAccepted)}
             />
-            <Text style={signup.subscribeCheckboxText}>
+            <Text style={log.subscribeCheckboxText}>
               I accept the terms of Use and Privacy
             </Text>
           </View>
-          <View style={signup.subscribeButton}>
+          <View style={log.subscribeButton}>
           <GlobalButton
             style={globalButton.button}
             title="Click"
             onPress={handleSignup}
           >
-            <Text style={signup.clickText}>Register</Text>
+            <Text style={log.clickText}>Register</Text>
           </GlobalButton>
           </View>
         </View>

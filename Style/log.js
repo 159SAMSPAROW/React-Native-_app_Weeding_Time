@@ -3,7 +3,7 @@ import { StyleSheet, Dimensions } from "react-native";
 const screenHeight = Dimensions.get("window").height;
 const navbarHeight = 62;
 
-const signup = StyleSheet.create({
+const log = StyleSheet.create({
   header: {
     width: "100%",
     height: 70,
@@ -83,4 +83,4 @@ const signup = StyleSheet.create({
   },
 });
 
-export default signup;
+export default log;

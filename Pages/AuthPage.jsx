@@ -15,8 +15,8 @@ const AuthPage = () => {
       <View style={authPage.page}>
       {isLogin ? <Login /> : <Signup />}
       <Button
-        title={`Already have an account ? ${isLogin ? 'Signup' : 'Login'}`}
-        onPress={() => setIsLogin(!isLogin)}
+          title={isLogin ? "Don't have an account? Signup" : "Already have an account? Login"}
+          onPress={() => setIsLogin(!isLogin)}
       />
       </View>
     </View>
