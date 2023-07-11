@@ -89,7 +89,7 @@ export const WeedingMealCard = [
           subCategoryItem: {
             path: require("./assets/Images/starter_2.jpg"),
             description:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ",
             vegan: false,
             allergens: ["gluten", "lactose", "fruits de mer"],
             price: "20€",
@@ -100,7 +100,7 @@ export const WeedingMealCard = [
           subCategoryItem: {
             path: require("./assets/Images/starter_3.jpg"),
             description:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+              "Lorem ipsum dolor sit amet, consectetur adipiscing el",
             vegan: false,
             allergens: ["gluten", "lactose", "fruits de mer"],
             price: "20€",
@@ -118,7 +118,7 @@ export const WeedingMealCard = [
           subCategoryItem: {
             path: require("./assets/Images/mainCourse_1.jpg"),
             description:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
             vegan: false,
             allergens: ["gluten", "lactose", "fruits de mer"],
             price: "20€",
@@ -129,7 +129,7 @@ export const WeedingMealCard = [
           subCategoryItem: {
             path: require("./assets/Images/mainCourse_2.jpg"),
             description:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, s",
             vegan: true,
             allergens: ["gluten", "lactose", "fruits de mer"],
             price: "20€",
@@ -140,7 +140,7 @@ export const WeedingMealCard = [
           subCategoryItem: {
             path: require("./assets/Images/mainCourse_3.jpg"),
             description:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
             vegan: false,
             allergens: ["gluten", "lactose", "fruits de mer"],
             price: "20€",
@@ -158,7 +158,7 @@ export const WeedingMealCard = [
           subCategoryItem: {
             path: require("./assets/Images/cheese_1.jpg"),
             description:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
             vegan: false,
             allergens: ["gluten", "lactose", "fruits de mer"],
             price: "20€",
@@ -169,7 +169,7 @@ export const WeedingMealCard = [
           subCategoryItem: {
             path: require("./assets/Images/cheese_2.jpg"),
             description:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+              "Lorem ipsum dolor sit amet, consectetur adipiscing ",
             vegan: true,
             allergens: ["gluten", "lactose", "fruits de mer"],
             price: "20€",
@@ -180,7 +180,7 @@ export const WeedingMealCard = [
           subCategoryItem: {
             path: require("./assets/Images/cheese_3.jpg"),
             description:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+              "Lorem ipsum dolor sit amet, consectetur adipiscing",
             vegan: false,
             allergens: ["gluten", "lactose", "fruits de mer"],
             price: "20€",
@@ -198,7 +198,7 @@ export const WeedingMealCard = [
           subCategoryItem: {
             path: require("./assets/Images/dessert_1.jpg"),
             description:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, ",
             vegan: true,
             allergens: ["gluten", "lactose", "fruits de mer"],
             price: "20€",
@@ -209,7 +209,7 @@ export const WeedingMealCard = [
           subCategoryItem: {
             path: require("./assets/Images/dessert_2.jpg"),
             description:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, s",
             vegan: false,
             allergens: ["gluten", "lactose", "fruits de mer"],
             price: "20€",
@@ -220,7 +220,7 @@ export const WeedingMealCard = [
           subCategoryItem: {
             path: require("./assets/Images/dessert_3.jpg"),
             description:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sa",
             vegan: true,
             allergens: ["gluten", "lactose", "fruits de mer"],
             price: "20€",

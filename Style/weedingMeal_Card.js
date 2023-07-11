@@ -37,7 +37,7 @@ const weedingMeal_Card = StyleSheet.create({
     textDecorationLine: "underline",
   },
   carousel: {
-    top: 50,
+    top: "10%",
     alignItems: "center",
   },
   carouselImage: {

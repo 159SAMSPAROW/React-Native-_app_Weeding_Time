@@ -18,5 +18,13 @@ const styles = StyleSheet.create({
     color: "#462B48",
     textAlign: "center",
   },
+  
+  h3:{
+    fontSize: 24,
+    textDecorationLine: "underline",
+    color: "#462B48",
+    textAlign: "center",
+    fontWeight: "bold",
+  },
 });
 export { styles };

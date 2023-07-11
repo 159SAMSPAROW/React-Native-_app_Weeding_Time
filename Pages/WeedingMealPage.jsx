@@ -3,7 +3,7 @@ import Navbar from "../Components/Navbar";
 import  WeedingForm from "../Components/WeedingForm.jsx";
 import WeedingMeal_Card from "../Components/WeedingMeal_Card";
 import { styles } from "../Style/global_style";
-import { weedingMealPage } from "../Style/weedingPage";
+import { weedingMealPage } from "../Style/weedingMealPage";
 import Footer from "../Components/Footer"
 
 

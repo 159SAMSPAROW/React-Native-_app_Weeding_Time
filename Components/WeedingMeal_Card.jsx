@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useContext } from "react";
 import {
   View,
   Text,
@@ -18,11 +18,14 @@ import { WeedingMealCard } from "../Constante";
 import GlobalButton from "./GlobalButton";
 import { globalButton } from "../Style/button";
 
+import WeedingMealRecapContext from "../Context/WeedingMealRecapContext";
+
 const WeedingMeal_Card = () => {
   const [activeIndex, setActiveIndex] = useState(null);
   const carouselRef = useRef(null);
   const [selectedButtonIndices, setSelectedButtonIndices] = useState([]);
   const [showAllergens, setShowAllergens] = useState(false);
+  const { setSelectedOptions } = useContext(WeedingMealRecapContext);
 
   const navigation = useNavigation();
 
@@ -53,9 +56,15 @@ const WeedingMeal_Card = () => {
       const category = WeedingMealCard[index.categoryIndex];
       const cardKey = Object.keys(category)[0];
       const card = category[cardKey];
-      return card.subCategory[index.itemIndex];
+      return {
+        ...card.subCategory[index.itemIndex],
+        title: card.title
+      };
     });
 
+    setSelectedOptions(selectedOptions);
+
+    navigation.navigate("WeedingMealRecapPage");
     console.log(selectedOptions);
   };
 
@@ -189,7 +198,9 @@ const WeedingMeal_Card = () => {
         <TouchableOpacity
           onPress={() => navigation.navigate("TermsAndConditions")}
         >
-          <Text style={weedingMeal_Card.bottomGtcLink}>General Terms and Conditions (GTC).</Text>
+          <Text style={weedingMeal_Card.bottomGtcLink}>
+            General Terms and Conditions (GTC).
+          </Text>
         </TouchableOpacity>
         <GlobalButton
           style={globalButton.button}
@@ -202,7 +213,6 @@ const WeedingMeal_Card = () => {
           </View>
         </GlobalButton>
       </View>
-    
     </View>
   );
 };
