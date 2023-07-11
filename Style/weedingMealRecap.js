@@ -34,13 +34,12 @@ const weedingMealRecap = StyleSheet.create({
     opacity: 0.1,
   },
   recapBody: {
-    
     alignItems: "center",
   },
 
   recapBodyH3: {
     fontSize: 22,
-    margin:"2%",
+    margin: "2%",
     textDecorationLine: "underline",
     color: "#462B48",
   },
@@ -62,10 +61,10 @@ const weedingMealRecap = StyleSheet.create({
     width: "80%",
     flexDirection: "column",
   },
-  recapBodyDescriptionText:{
+  recapBodyDescriptionText: {
     fontSize: 16,
   },
-  recapBodyDescriptionVegan:{
+  recapBodyDescriptionVegan: {
     marginTop: 10,
     color: "#50CC98",
     fontSize: 16,

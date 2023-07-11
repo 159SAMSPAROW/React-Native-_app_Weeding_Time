@@ -12,7 +12,6 @@ const WeedingForm = () => {
   const [weddingDate, setWeddingDate] = useState(new Date());
 
   const handleFormSubmit = () => {
-
     console.log("WeedingName:", WeedingName);
     console.log("Address:", address);
     console.log("Guest Count:", guestCount);
@@ -80,7 +79,11 @@ const WeedingForm = () => {
           <StarIcon name="star-border" style={weedingForm.stars} />
         </View>
         <View style={weedingForm.divider}></View>
-        <Text style={weedingForm.text}>You can choose multiple options per dish, and we will take care of gathering the choices from each of your guests to ensure everyone's satisfaction</Text>
+        <Text style={weedingForm.text}>
+          You can choose multiple options per dish, and we will take care of
+          gathering the choices from each of your guests to ensure everyone's
+          satisfaction
+        </Text>
         <View style={weedingForm.divider}></View>
         <View style={weedingForm.starsContainer}>
           <StarIcon name="star-border" style={weedingForm.stars} />

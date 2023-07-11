@@ -18,8 +18,8 @@ const styles = StyleSheet.create({
     color: "#462B48",
     textAlign: "center",
   },
-  
-  h3:{
+
+  h3: {
     fontSize: 24,
     textDecorationLine: "underline",
     color: "#462B48",

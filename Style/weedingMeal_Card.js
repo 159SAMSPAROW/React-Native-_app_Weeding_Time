@@ -135,8 +135,8 @@ const weedingMeal_Card = StyleSheet.create({
     padding: 10,
   },
   bottomGtcLink: {
-    textAlign: "center", 
-    textDecorationLine: "underline", 
+    textAlign: "center",
+    textDecorationLine: "underline",
     fontWeight: "500",
     marginLeft: 2,
     marginRight: 2,

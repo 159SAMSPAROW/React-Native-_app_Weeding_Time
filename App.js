@@ -8,9 +8,7 @@ import { styles } from "./Style/global_style";
 import WeedingMealRecapContext from "./Context/WeedingMealRecapContext";
 
 export default function App() {
-
   const [selectedOptions, setSelectedOptions] = useState([]);
-
 
   return (
     <NavigationContainer>

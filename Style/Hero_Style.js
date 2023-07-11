@@ -3,7 +3,6 @@ import { StyleSheet, Dimensions } from "react-native";
 const screenHeight = Dimensions.get("window").height;
 const navbarHeight = 62;
 
-
 const heroStyle = StyleSheet.create({
   header: {
     flex: 1,
@@ -25,7 +24,6 @@ const heroStyle = StyleSheet.create({
     top: 10,
     fontSize: 30,
     color: "#462B47",
-    
   },
 
   divider: {

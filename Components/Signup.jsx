@@ -28,20 +28,26 @@ const Signup = () => {
 
   const handleSignup = () => {
     if (!validateEmail(email)) {
-      Alert.alert('Invalid email', 'Please enter a valid email.');
+      Alert.alert("Invalid email", "Please enter a valid email.");
       return;
     }
 
     if (password !== confirmPassword) {
-      Alert.alert('Passwords do not match', 'Please make sure your passwords match.');
+      Alert.alert(
+        "Passwords do not match",
+        "Please make sure your passwords match."
+      );
       return;
     }
 
     if (!termsAccepted) {
-      Alert.alert('Terms not accepted', 'Please accept the terms of use and privacy to proceed.');
+      Alert.alert(
+        "Terms not accepted",
+        "Please accept the terms of use and privacy to proceed."
+      );
       return;
     }
-    navigation.navigate("HomePage")
+    navigation.navigate("HomePage");
     console.log("signup work");
   };
   return (
@@ -115,13 +121,13 @@ const Signup = () => {
             </Text>
           </View>
           <View style={log.subscribeButton}>
-          <GlobalButton
-            style={globalButton.button}
-            title="Click"
-            onPress={handleSignup}
-          >
-            <Text style={log.clickText}>Register</Text>
-          </GlobalButton>
+            <GlobalButton
+              style={globalButton.button}
+              title="Click"
+              onPress={handleSignup}
+            >
+              <Text style={log.clickText}>Register</Text>
+            </GlobalButton>
           </View>
         </View>
       </View>

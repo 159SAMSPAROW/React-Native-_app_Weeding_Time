@@ -3,7 +3,7 @@ import { View, Text, ImageBackground, TouchableOpacity } from "react-native";
 import { navbar_style } from "../Style/navbar";
 import { useFonts } from "expo-font";
 import Icon from "react-native-vector-icons/MaterialIcons";
-import { useNavigation } from '@react-navigation/native';
+import { useNavigation } from "@react-navigation/native";
 
 export default function Navbar() {
   let [fontsLoaded] = useFonts({

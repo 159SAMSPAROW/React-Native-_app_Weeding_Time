@@ -90,7 +90,7 @@ export const weedingForm = StyleSheet.create({
     width: 150,
     height: 50,
     flexDirection: "row-reverse",
-    
+
     borderWidth: 3,
     borderColor: "#FFFFFF",
     borderRadius: 5,
@@ -120,6 +120,6 @@ export const weedingForm = StyleSheet.create({
     color: "#6750A4",
     margin: "4%",
     textAlign: "center",
-    lineHeight: 35,    
+    lineHeight: 35,
   },
 });

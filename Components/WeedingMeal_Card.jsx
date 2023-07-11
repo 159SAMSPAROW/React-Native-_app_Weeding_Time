@@ -58,7 +58,7 @@ const WeedingMeal_Card = () => {
       const card = category[cardKey];
       return {
         ...card.subCategory[index.itemIndex],
-        title: card.title
+        title: card.title,
       };
     });
 

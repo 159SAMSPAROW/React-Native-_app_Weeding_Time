@@ -3,12 +3,10 @@ const screenHeight = Dimensions.get("window").height;
 const navbarHeight = 62;
 
 const homepage_carousel = StyleSheet.create({
-
   container: {
     flex: 1,
     minHeight: screenHeight - navbarHeight,
     backgroundColor: "rgba(76, 76, 76, 0.1)",
-    
   },
 
   header: {
@@ -20,7 +18,7 @@ const homepage_carousel = StyleSheet.create({
   h2: {
     margin: 40,
   },
- 
+
   carousel: {
     height: 480,
   },
@@ -80,8 +78,8 @@ const homepage_carousel = StyleSheet.create({
     width: "100%",
     height: screenHeight,
     opacity: 0.1,
-    borderWidth: 2, 
-    borderColor: '#000000', 
+    borderWidth: 2,
+    borderColor: "#000000",
   },
 });
 

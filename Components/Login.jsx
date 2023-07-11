@@ -27,10 +27,8 @@ const Login = () => {
       return;
     }
 
-
     console.log("Login successful");
 
- 
     navigation.navigate("HomePage");
   };
 
@@ -66,9 +64,7 @@ const Login = () => {
           </TouchableOpacity>
 
           {/* I'm assuming you want to add another TouchableOpacity here for AppleAuth */}
-          <TouchableOpacity
-            onPress={() => handlePress("AppleAuth")}
-          >
+          <TouchableOpacity onPress={() => handlePress("AppleAuth")}>
             <View style={log.socialButtonContent}>
               <Icon2 name="apple" size={30} color="#6750A4" />
               <Text style={log.socialButtonText}>Connect with Apple</Text>
@@ -96,9 +92,9 @@ const Login = () => {
             <GlobalButton
               style={globalButton.button}
               title="Click"
-              onPress={handleLogin} 
+              onPress={handleLogin}
             >
-              <Text style={log.clickText}>Login</Text> 
+              <Text style={log.clickText}>Login</Text>
             </GlobalButton>
           </View>
         </View>

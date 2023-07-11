@@ -52,14 +52,14 @@ const WeedingMealRecap = () => {
                   source={option.subCategoryItem.path}
                 />
                 <View style={weedingMealRecap.recapBodyDescription}>
-                <Text style={weedingMealRecap.recapBodyDescriptionText}>
-                  {option.subCategoryItem.description}
-                </Text>
-                {option.subCategoryItem.vegan ? (
-                  <Text style={weedingMealRecap.recapBodyDescriptionVegan}>
-                    Vegan Option
+                  <Text style={weedingMealRecap.recapBodyDescriptionText}>
+                    {option.subCategoryItem.description}
                   </Text>
-                ) : null}
+                  {option.subCategoryItem.vegan ? (
+                    <Text style={weedingMealRecap.recapBodyDescriptionVegan}>
+                      Vegan Option
+                    </Text>
+                  ) : null}
                 </View>
               </View>
             ))}

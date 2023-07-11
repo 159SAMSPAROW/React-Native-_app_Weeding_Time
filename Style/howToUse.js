@@ -9,7 +9,7 @@ const howToUse = StyleSheet.create({
     alignItems: "center",
   },
 
-  backgroundImage:{
+  backgroundImage: {
     height: "auto",
   },
   h2: {
@@ -17,7 +17,6 @@ const howToUse = StyleSheet.create({
   },
 
   list: {
- 
     margin: 10,
     width: "95%",
     backgroundColor: "#FFFFFF",

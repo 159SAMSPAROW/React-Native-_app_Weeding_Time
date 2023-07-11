@@ -2,19 +2,19 @@ import { View, Text, TouchableOpacity, Linking } from "react-native";
 import { footer } from "../Style/footer";
 import GlobalButton from "./GlobalButton";
 import { smallButton } from "../Style/button";
-import Icon from 'react-native-vector-icons/FontAwesome';
+import Icon from "react-native-vector-icons/FontAwesome";
 
-const SocialMediaIcon = ({name, url}) => {
+const SocialMediaIcon = ({ name, url }) => {
   const handlePress = () => {
-      Linking.openURL(url);
+    Linking.openURL(url);
   };
 
   return (
-      <TouchableOpacity style={footer.socialIcon} onPress={handlePress}>
-          <Icon name={name} size={60}  color="#FFFFFF" />
-      </TouchableOpacity>
+    <TouchableOpacity style={footer.socialIcon} onPress={handlePress}>
+      <Icon name={name} size={60} color="#FFFFFF" />
+    </TouchableOpacity>
   );
-}
+};
 
 const Footer = () => {
   const handleEmail = () => {
@@ -34,13 +34,26 @@ const Footer = () => {
         onPress={() => {
           console.log("Button pressed");
         }}
-      ><Text style={smallButton.text}>GTC</Text>
+      >
+        <Text style={smallButton.text}>GTC</Text>
       </GlobalButton>
 
       <View style={footer.socialIconContainer}>
-        <SocialMediaIcon style={footer.socialIcon}  name="facebook" url="https://www.facebook.com" />
-        <SocialMediaIcon style={footer.socialIcon} name="snapchat" url="https://www.snapchat.com"  />
-        <SocialMediaIcon style={footer.socialIcon}  name="instagram" url="https://www.instagram.com" />
+        <SocialMediaIcon
+          style={footer.socialIcon}
+          name="facebook"
+          url="https://www.facebook.com"
+        />
+        <SocialMediaIcon
+          style={footer.socialIcon}
+          name="snapchat"
+          url="https://www.snapchat.com"
+        />
+        <SocialMediaIcon
+          style={footer.socialIcon}
+          name="instagram"
+          url="https://www.instagram.com"
+        />
       </View>
     </View>
   );

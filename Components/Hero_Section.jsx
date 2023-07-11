@@ -39,7 +39,7 @@ const Hero_Section = () => {
         <Text style={heroStyle.h1}>
           <Text>Weeding</Text>
         </Text>
-      
+
         <View style={heroStyle.scrollDown}>
           <Text style={heroStyle.scrollDownText}>Please Scroll</Text>
           <Icon

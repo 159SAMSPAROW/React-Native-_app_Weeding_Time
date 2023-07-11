@@ -11,61 +11,61 @@ const HowToUse = () => {
         source={require("../assets/Images/water_color_bg.jpg")}
         style={howToUse.backgroundImage}
       >
-      <View>
-        <Text style={[styles.h2, howToUse.h2]}>HOW DOES IT WORK</Text>
+        <View>
+          <Text style={[styles.h2, howToUse.h2]}>HOW DOES IT WORK</Text>
 
-        <View style={howToUse.list}>
-          <View style={howToUse.listItem}>
-            <View style={howToUse.circle}>
-              <Text style={howToUse.number}>1</Text>
+          <View style={howToUse.list}>
+            <View style={howToUse.listItem}>
+              <View style={howToUse.circle}>
+                <Text style={howToUse.number}>1</Text>
+              </View>
+              <Text style={howToUse.text}>Create your Account</Text>
             </View>
-            <Text style={howToUse.text}>Create your Account</Text>
-          </View>
-          <View style={howToUse.listItem}>
-            <View style={howToUse.circle}>
-              <Text style={howToUse.number}>2</Text>
+            <View style={howToUse.listItem}>
+              <View style={howToUse.circle}>
+                <Text style={howToUse.number}>2</Text>
+              </View>
+              <Text style={howToUse.text}>Select a Category</Text>
             </View>
-            <Text style={howToUse.text}>Select a Category</Text>
+
+            <View style={howToUse.listItem}>
+              <View style={howToUse.circle}>
+                <Text style={howToUse.number}>3</Text>
+              </View>
+              <Text style={howToUse.text}>Choose your Options</Text>
+            </View>
+
+            <View style={howToUse.listItem}>
+              <View style={howToUse.circle}>
+                <Text style={howToUse.number}>4</Text>
+              </View>
+              <Text style={howToUse.text}>Send Us your Request</Text>
+            </View>
+
+            <View style={howToUse.listItem}>
+              <View style={howToUse.circle}>
+                <Text style={howToUse.number}>5</Text>
+              </View>
+              <Text style={howToUse.text}>You will Receive your Quote</Text>
+            </View>
+
+            <View style={howToUse.listItem}>
+              <View style={howToUse.circle}>
+                <Text style={howToUse.number}>6</Text>
+              </View>
+              <Text style={howToUse.text}>Validate and Sign your Quote</Text>
+            </View>
+
+            <View style={howToUse.listItem}>
+              <View style={howToUse.circle}>
+                <Text style={howToUse.number}>7</Text>
+              </View>
+              <Text style={howToUse.text}>Send the Menu to your Guests</Text>
+            </View>
           </View>
 
-          <View style={howToUse.listItem}>
-            <View style={howToUse.circle}>
-              <Text style={howToUse.number}>3</Text>
-            </View>
-            <Text style={howToUse.text}>Choose your Options</Text>
-          </View>
-
-          <View style={howToUse.listItem}>
-            <View style={howToUse.circle}>
-              <Text style={howToUse.number}>4</Text>
-            </View>
-            <Text style={howToUse.text}>Send Us your Request</Text>
-          </View>
-
-          <View style={howToUse.listItem}>
-            <View style={howToUse.circle}>
-              <Text style={howToUse.number}>5</Text>
-            </View>
-            <Text style={howToUse.text}>You will Receive your Quote</Text>
-          </View>
-
-          <View style={howToUse.listItem}>
-            <View style={howToUse.circle}>
-              <Text style={howToUse.number}>6</Text>
-            </View>
-            <Text style={howToUse.text}>Validate and Sign your Quote</Text>
-          </View>
-
-          <View style={howToUse.listItem}>
-            <View style={howToUse.circle}>
-              <Text style={howToUse.number}>7</Text>
-            </View>
-            <Text style={howToUse.text}>Send the Menu to your Guests</Text>
-          </View>
+          <Text style={[styles.h2, howToUse.h2]}>AND THERE YOU GO</Text>
         </View>
-
-        <Text style={[styles.h2, howToUse.h2]}>AND THERE YOU GO</Text>
-      </View>
       </ImageBackground>
     </View>
   );

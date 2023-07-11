@@ -9,7 +9,7 @@ const homepage_card = StyleSheet.create({
     minHeight: screenHeight - navbarHeight,
     borderBottomWidth: 15,
     borderBottomColor: "#D0C9E2",
-    
+
     gradient: {
       flex: 1,
     },

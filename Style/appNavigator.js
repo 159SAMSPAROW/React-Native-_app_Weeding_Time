@@ -1,9 +1,8 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet } from "react-native";
 
 const appNavigator = StyleSheet.create({
-
   textStyle: {
-    alignSelf: 'flexStart',
+    alignSelf: "flexStart",
     marginLeft: "60%",
     color: "#50CC98",
   },
@@ -12,13 +11,13 @@ const appNavigator = StyleSheet.create({
     height: 25,
   },
   backButtonStyle: {
-    alignSelf: 'flexStart', 
+    alignSelf: "flexStart",
   },
   backButtonTextStyle: {
     color: "#50CC98",
     marginBottom: 5,
-    fontWeight: "bold", 
-    fontSize: 16, 
+    fontWeight: "bold",
+    fontSize: 16,
   },
 });
 

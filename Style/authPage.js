@@ -4,9 +4,8 @@ const screenHeight = Dimensions.get("window").height;
 const navbarHeight = 69;
 
 const authPage = StyleSheet.create({
-    page:{
-        style: { flex: 1, height: screenHeight - navbarHeight },
-    },
-
-})
-export default authPage
+  page: {
+    style: { flex: 1, height: screenHeight - navbarHeight },
+  },
+});
+export default authPage;

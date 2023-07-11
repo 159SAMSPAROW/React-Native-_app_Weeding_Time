@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 
 export const weedingMealPage = StyleSheet.create({
   title: {
-    position:"absolute",
+    position: "absolute",
     top: 20,
     left: 120,
     zIndex: 1,

@@ -1,7 +1,6 @@
 import { StyleSheet } from "react-native";
 
 const navbar_style = StyleSheet.create({
-
   navbar: {
     height: 55,
     display: "flex",

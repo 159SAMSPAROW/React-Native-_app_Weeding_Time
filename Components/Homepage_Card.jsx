@@ -35,45 +35,43 @@ const Homepage_card = () => {
             category={category}
             navigateToPage={() => navigation.navigate("WeedingMealPage")}
           >
-          
-              <View style={homepage_card.header}>
-                <View style={homepage_card.divider} />
-                <ImageBackground
-                  style={homepage_card.banner}
-                  source={require("../assets/Images/navbar_Bg.jpg")}
+            <View style={homepage_card.header}>
+              <View style={homepage_card.divider} />
+              <ImageBackground
+                style={homepage_card.banner}
+                source={require("../assets/Images/navbar_Bg.jpg")}
+              />
+              <View style={homepage_card.divider} />
+
+              <View style={homepage_card.titleContainer}>
+                <Image
+                  style={homepage_card.illustration}
+                  source={category.illustration}
                 />
-                <View style={homepage_card.divider} />
-
-                <View style={homepage_card.titleContainer}>
-                  <Image
-                    style={homepage_card.illustration}
-                    source={category.illustration}
-                  />
-                  <Text style={homepage_card.title}>{category.title}</Text>
-                </View>
+                <Text style={homepage_card.title}>{category.title}</Text>
               </View>
+            </View>
 
-              <View style={homepage_card.body}>
-                <Image style={homepage_card.image} source={category.image} />
-                <View style={homepage_card.descriptionContainer}>
-                  <Text style={homepage_card.description}>
-                    {category.description}
-                  </Text>
-                  <GlobalButton
-                    style={globalButton.button}
-                    title="Click"
-                    onPress={() => navigation.navigate("WeedingMealPage")}
-                  >
-                    <View style={homepage_card.eyeContainer}>
-                      <Icon style={homepage_card.eye} name="visibility" />
-                      <Text style={homepage_card.clickText}>
-                        Click to See More
-                      </Text>
-                    </View>
-                  </GlobalButton>
-                </View>
+            <View style={homepage_card.body}>
+              <Image style={homepage_card.image} source={category.image} />
+              <View style={homepage_card.descriptionContainer}>
+                <Text style={homepage_card.description}>
+                  {category.description}
+                </Text>
+                <GlobalButton
+                  style={globalButton.button}
+                  title="Click"
+                  onPress={() => navigation.navigate("WeedingMealPage")}
+                >
+                  <View style={homepage_card.eyeContainer}>
+                    <Icon style={homepage_card.eye} name="visibility" />
+                    <Text style={homepage_card.clickText}>
+                      Click to See More
+                    </Text>
+                  </View>
+                </GlobalButton>
               </View>
-    
+            </View>
           </View>
         );
       })}
