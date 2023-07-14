@@ -123,9 +123,9 @@ export const weedingForm = StyleSheet.create({
     lineHeight: 35,
   },
   submitButton: {
-  justifyContent: "center",
-  alignItems: "center",
-  marginLeft: -17,
+    justifyContent: "center",
+    alignItems: "center",
+    marginLeft: -17,
   },
   submitButtonText: {
     color: "#FFFFFF",

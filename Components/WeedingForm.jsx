@@ -1,8 +1,9 @@
 import React, { useContext } from "react";
-import { View, Text, TextInput, Button, ImageBackground } from "react-native";
+import { View, Text, TextInput, Button, ImageBackground, Alert } from "react-native";
 
 import WeedingFormContext from "../Context/WeedingFormContext";
 import WeedingMealRecapContext from "../Context/WeedingMealRecapContext";
+import QuoteContext from "../Context/QuoteContext";
 
 import GlobalButton from "../Components/GlobalButton";
 import { globalButton } from "../Style/button";
@@ -12,17 +13,49 @@ import Icon from "react-native-vector-icons/FontAwesome";
 import StarIcon from "react-native-vector-icons/MaterialIcons";
 import DateTimePicker from "@react-native-community/datetimepicker";
 
+import { useNavigation } from "@react-navigation/native";
+
 const WeedingForm = () => {
   const { weedingFormState, setWeedingFormState } =
     useContext(WeedingFormContext);
+
   const { selectedOptions } = useContext(WeedingMealRecapContext);
 
+ // const { quoteData, setQuoteData } = useContext(QuoteContext);
+
+  const navigation = useNavigation();
+
   const handleButtonClick = () => {
-    // Récupérez les données du formulaire et les items sélectionnés
+    // Récupére les données du formulaire et les items sélectionnés
     const formData = weedingFormState;
     const selectedItems = selectedOptions;
 
-    console.log(formData, selectedItems);
+    // Si tout les champs sont bien remplis
+    if (
+      !formData.WeedingName ||
+      !formData.address ||
+      !formData.guestCount ||
+      !formData.weddingDate
+    ) {
+      Alert.alert("Error", "Please fill all the fields.");
+      return;
+    }
+
+    // Si la date est superieur d' un mois
+    const oneMonthFromNow = new Date();
+    oneMonthFromNow.setMonth(oneMonthFromNow.getMonth() + 1);
+    if (formData.weddingDate < oneMonthFromNow) {
+      Alert.alert(
+        "Error",
+        "The wedding date should be at least one month from now."
+      );
+      return;
+    }
+
+    // Met à jour les données du devis
+    //setQuoteData({ formData, selectedItems });
+    //console.log(formData, selectedItems);
+    navigation.navigate("Quote");
   };
 
   return (
@@ -109,7 +142,7 @@ const WeedingForm = () => {
           <StarIcon name="star-border" style={weedingForm.stars} />
         </View>
         <GlobalButton
-          style={[globalButton.button , weedingForm.submitButton]}
+          style={[globalButton.button, weedingForm.submitButton]}
           title="Send"
           onPress={handleButtonClick}
         >

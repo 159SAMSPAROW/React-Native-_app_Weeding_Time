@@ -4,6 +4,7 @@ import Homepage from "./Pages/Homepage";
 import WeedingMealPage from "./Pages/WeedingMealPage";
 import AuthPage from "./Pages/AuthPage";
 import WeedingMealRecapPage from "./Pages/WeedingMealRecapPage";
+import Quote from "./Components/Quote";
 
 import appNavigator from "./Style/appNavigator";
 const Stack = createStackNavigator();
@@ -26,6 +27,7 @@ function AppNavigator() {
         name="WeedingMealRecapPage"
         component={WeedingMealRecapPage}
       />
+      <Stack.Screen name="Quote" component={Quote} />
     </Stack.Navigator>
   );
 }

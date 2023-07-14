@@ -2,6 +2,7 @@ import { StyleSheet, Platform, StatusBar } from "react-native";
 //import { useImageDimensions, useDeviceOrientation } from "@react-native-community/hooks";
 
 const styles = StyleSheet.create({
+  
   container: {
     flex: 1,
     backgroundColor: "#FFFFFF",

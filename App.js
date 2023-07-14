@@ -16,6 +16,7 @@ export default function App() {
     guestCount: "",
     weddingDate: new Date(),
   });
+  const [quoteData, setQuoteData] = useState(null);
 
   return (
     <NavigationContainer>

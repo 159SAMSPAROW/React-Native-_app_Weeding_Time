@@ -1,7 +1,7 @@
 import React from "react";
 
 const WeedingMealRecapContext = React.createContext({
-    selectedOptions: [],
+  selectedOptions: [],
   setSelectedOptions: () => {},
 });
 
