@@ -4,7 +4,7 @@ export const footer = StyleSheet.create({
   footerSection: {
     backgroundColor: "#6750A4",
     alignItems: "center",
-    marginTop: -105,
+    
   },
 
   footerLink: {

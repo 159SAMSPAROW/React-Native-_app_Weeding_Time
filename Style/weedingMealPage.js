@@ -2,10 +2,8 @@ import { StyleSheet } from "react-native";
 
 export const weedingMealPage = StyleSheet.create({
   title: {
-    position: "absolute",
-    top: 20,
-    left: 120,
-    zIndex: 1,
+    height: 60,
+    top: 16,
     color: "#6750A4",
   },
 });

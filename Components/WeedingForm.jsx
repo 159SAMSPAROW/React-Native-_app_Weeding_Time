@@ -1,21 +1,28 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import { View, Text, TextInput, Button, ImageBackground } from "react-native";
+
+import WeedingFormContext from "../Context/WeedingFormContext";
+import WeedingMealRecapContext from "../Context/WeedingMealRecapContext";
+
+import GlobalButton from "../Components/GlobalButton";
+import { globalButton } from "../Style/button";
+
 import { weedingForm } from "../Style/weedingForm";
 import Icon from "react-native-vector-icons/FontAwesome";
 import StarIcon from "react-native-vector-icons/MaterialIcons";
 import DateTimePicker from "@react-native-community/datetimepicker";
 
 const WeedingForm = () => {
-  const [WeedingName, setWeedingName] = useState("");
-  const [address, setAddress] = useState("");
-  const [guestCount, setGuestCount] = useState("");
-  const [weddingDate, setWeddingDate] = useState(new Date());
+  const { weedingFormState, setWeedingFormState } =
+    useContext(WeedingFormContext);
+  const { selectedOptions } = useContext(WeedingMealRecapContext);
 
-  const handleFormSubmit = () => {
-    console.log("WeedingName:", WeedingName);
-    console.log("Address:", address);
-    console.log("Guest Count:", guestCount);
-    console.log("Wedding Date:", weddingDate);
+  const handleButtonClick = () => {
+    // Récupérez les données du formulaire et les items sélectionnés
+    const formData = weedingFormState;
+    const selectedItems = selectedOptions;
+
+    console.log(formData, selectedItems);
   };
 
   return (
@@ -25,10 +32,13 @@ const WeedingForm = () => {
           <View style={weedingForm.inputContainer}>
             <View style={weedingForm.topBorder}></View>
             <Text style={weedingForm.label}>Weeding Name</Text>
+
             <TextInput
               style={weedingForm.input}
-              value={WeedingName}
-              onChangeText={setWeedingName}
+              value={weedingFormState.WeedingName}
+              onChangeText={(text) =>
+                setWeedingFormState({ ...weedingFormState, WeedingName: text })
+              }
             />
           </View>
 
@@ -37,8 +47,10 @@ const WeedingForm = () => {
             <Text style={weedingForm.label}>Location</Text>
             <TextInput
               style={weedingForm.input}
-              value={address}
-              onChangeText={setAddress}
+              value={weedingFormState.address}
+              onChangeText={(text) =>
+                setWeedingFormState({ ...weedingFormState, address: text })
+              }
             />
             <Icon name="search" size={20} style={weedingForm.searchIcon} />
           </View>
@@ -47,8 +59,10 @@ const WeedingForm = () => {
             <Text style={weedingForm.label2}>Guest Count</Text>
             <TextInput
               style={weedingForm.input2}
-              value={guestCount}
-              onChangeText={setGuestCount}
+              value={weedingFormState.guestCount}
+              onChangeText={(text) =>
+                setWeedingFormState({ ...weedingFormState, guestCount: text })
+              }
               keyboardType="numeric"
             />
           </View>
@@ -57,10 +71,15 @@ const WeedingForm = () => {
             <Text style={weedingForm.label2}>Date</Text>
             <View style={weedingForm.inputDateContainer}>
               <DateTimePicker
-                value={weddingDate}
+                value={weedingFormState.weddingDate}
                 mode="date"
                 display="default"
-                onChange={(event, date) => setWeddingDate(date || weddingDate)}
+                onChange={(event, date) =>
+                  setWeedingFormState({
+                    ...weedingFormState,
+                    weddingDate: date || weedingFormState.weddingDate,
+                  })
+                }
                 format="YYYY-MM-DD"
               />
               <Icon
@@ -71,7 +90,6 @@ const WeedingForm = () => {
               />
             </View>
           </View>
-          <Button title="Submit" onPress={handleFormSubmit} />
         </View>
         <View style={weedingForm.starsContainer}>
           <StarIcon name="star-border" style={weedingForm.stars} />
@@ -90,6 +108,15 @@ const WeedingForm = () => {
           <StarIcon name="star-border" style={weedingForm.stars} />
           <StarIcon name="star-border" style={weedingForm.stars} />
         </View>
+        <GlobalButton
+          style={[globalButton.button , weedingForm.submitButton]}
+          title="Send"
+          onPress={handleButtonClick}
+        >
+          <View>
+            <Text style={weedingForm.submitButtonText}>Send</Text>
+          </View>
+        </GlobalButton>
       </View>
     </ImageBackground>
   );

@@ -10,7 +10,7 @@ const weedingMeal_Card = StyleSheet.create({
   },
 
   header: {
-    top: 40,
+    top: 0,
   },
   divider: {
     height: 4,
@@ -19,7 +19,7 @@ const weedingMeal_Card = StyleSheet.create({
   },
 
   banner: {
-    height: 60,
+    height: 70,
   },
 
   titleContainer: {
@@ -37,16 +37,16 @@ const weedingMeal_Card = StyleSheet.create({
     textDecorationLine: "underline",
   },
   carousel: {
-    top: "10%",
+    top: "2%",
     alignItems: "center",
   },
   carouselImage: {
-    width: 250,
-    height: 180,
+    width: 270,
+    height: 250,
     borderRadius: 10,
-    borderColor: "#FFD1DC",
+    borderColor: "#6753DB",
     borderWidth: 3,
-    marginLeft: -37,
+    marginLeft: -45,
   },
 
   description: {

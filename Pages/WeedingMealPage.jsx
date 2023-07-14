@@ -20,7 +20,6 @@ const WeedingMealPage = () => {
         <View style={weedingMealPage.title}>
           <Text style={styles.h2}>Weeding Meal</Text>
         </View>
-        <WeedingForm />
         <WeedingMeal_Card />
         <Footer />
       </ScrollView>

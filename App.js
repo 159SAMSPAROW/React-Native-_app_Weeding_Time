@@ -6,18 +6,29 @@ import AppNavigator from "./AppNavigator";
 import { styles } from "./Style/global_style";
 
 import WeedingMealRecapContext from "./Context/WeedingMealRecapContext";
+import WeedingFormContext from "./Context/WeedingFormContext";
 
 export default function App() {
   const [selectedOptions, setSelectedOptions] = useState([]);
+  const [weedingFormState, setWeedingFormState] = useState({
+    WeedingName: "",
+    address: "",
+    guestCount: "",
+    weddingDate: new Date(),
+  });
 
   return (
     <NavigationContainer>
       <SafeAreaView style={styles.container}>
-        <WeedingMealRecapContext.Provider
-          value={{ selectedOptions, setSelectedOptions }}
+        <WeedingFormContext.Provider
+          value={{ weedingFormState, setWeedingFormState }}
         >
-          <AppNavigator />
-        </WeedingMealRecapContext.Provider>
+          <WeedingMealRecapContext.Provider
+            value={{ selectedOptions, setSelectedOptions }}
+          >
+            <AppNavigator />
+          </WeedingMealRecapContext.Provider>
+        </WeedingFormContext.Provider>
         <StatusBar style="auto" />
       </SafeAreaView>
     </NavigationContainer>

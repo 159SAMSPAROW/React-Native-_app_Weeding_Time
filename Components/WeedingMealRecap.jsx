@@ -5,18 +5,21 @@ import {
   Dimensions,
   ImageBackground,
   TouchableOpacity,
+  Button,
 } from "react-native";
 
 import React, { useContext } from "react";
+
 import weedingMealRecap from "../Style/weedingMealRecap";
 import { styles } from "../Style/global_style";
 import { useNavigation } from "@react-navigation/native";
 import WeedingMealRecapContext from "../Context/WeedingMealRecapContext";
+import { WeedingFormContext } from '../Context/WeedingFormContext'; 
 
 const WeedingMealRecap = () => {
-  const { selectedOptions } = useContext(WeedingMealRecapContext);
+  const { selectedOptions, setSelectedOptions } = useContext(WeedingMealRecapContext);
+   
   console.log(selectedOptions);
-  const navigation = useNavigation();
 
   // Group options by title
   const optionsByTitle = selectedOptions.reduce((groups, option) => {
@@ -65,6 +68,7 @@ const WeedingMealRecap = () => {
             ))}
           </View>
         ))}
+       
       </View>
     </View>
   );
