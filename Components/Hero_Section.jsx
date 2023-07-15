@@ -30,15 +30,17 @@ const Hero_Section = () => {
           style={heroStyle.background}
         ></ImageBackground>
         <View style={heroStyle.divider} />
-        <Text style={heroStyle.h1}>
-          <Text>Welcome !</Text>
-        </Text>
-        <Text style={heroStyle.h1}>
-          <Text>Compose Your Perfect</Text>
-        </Text>
-        <Text style={heroStyle.h1}>
-          <Text>Weeding</Text>
-        </Text>
+        <View style={heroStyle.h1Container}>
+          <Text style={heroStyle.h1}>
+            <Text>Welcome !</Text>
+          </Text>
+          <Text style={heroStyle.h1}>
+            <Text>Compose Your Perfect</Text>
+          </Text>
+          <Text style={heroStyle.h1}>
+            <Text>Weeding</Text>
+          </Text>
+        </View>
 
         <View style={heroStyle.scrollDown}>
           <Text style={heroStyle.scrollDownText}>Please Scroll</Text>

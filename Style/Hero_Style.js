@@ -14,16 +14,17 @@ const heroStyle = StyleSheet.create({
   },
 
   white_spaceTop: {
-    height: 45,
+    height: 125,
     display: "flex",
     flexDirection: "row",
     justifyContent: "center",
   },
 
   stars: {
-    top: 10,
+    top: 50,
     fontSize: 30,
     color: "#462B47",
+    opacity: .6,
   },
 
   divider: {
@@ -33,14 +34,19 @@ const heroStyle = StyleSheet.create({
   },
 
   background: {
+    height: 388,
+    opacity: 0.4,
+   
+  },
+
+  h1Container: {
     height: 288,
-    opacity: 0.6,
+    top: -345,
   },
 
   h1: {
     textAlign: "center",
     color: "#462B47",
-    marginTop: 10,
     fontSize: 53,
     lineHeight: 70,
     fontFamily: "Alegreya-Sans-SC",
