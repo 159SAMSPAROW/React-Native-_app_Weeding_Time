@@ -203,7 +203,7 @@ const WeedingMeal_Card = () => {
           </Text>
         </TouchableOpacity>
         <GlobalButton
-          style={globalButton.button}
+          style={[globalButton.button, weedingMeal_Card.bottomButton ]}
           title="Submit"
           onPress={handleGlobalButtonClick}
         >

@@ -5,6 +5,8 @@ import WeedingMealPage from "./Pages/WeedingMealPage";
 import AuthPage from "./Pages/AuthPage";
 import WeedingMealRecapPage from "./Pages/WeedingMealRecapPage";
 import Quote from "./Components/Quote";
+import GuestsList from "./Components/GuestList";
+import Confirmation from "./Components/Confirmation";
 
 import appNavigator from "./Style/appNavigator";
 const Stack = createStackNavigator();
@@ -28,6 +30,8 @@ function AppNavigator() {
         component={WeedingMealRecapPage}
       />
       <Stack.Screen name="Quote" component={Quote} />
+      <Stack.Screen name="GuestsList" component={GuestsList}/>
+      <Stack.Screen name="Confirmation" component={Confirmation}/>
     </Stack.Navigator>
   );
 }

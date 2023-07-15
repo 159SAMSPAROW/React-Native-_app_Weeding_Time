@@ -9,10 +9,6 @@ const homepage_card = StyleSheet.create({
     minHeight: screenHeight - navbarHeight,
     borderBottomWidth: 15,
     borderBottomColor: "#D0C9E2",
-
-    gradient: {
-      flex: 1,
-    },
   },
 
   bg: {
@@ -46,7 +42,6 @@ const homepage_card = StyleSheet.create({
   },
 
   title: {
-    position: "relative",
     top: 32,
     left: "25%",
     fontFamily: "Alegreya-Sans-SC",
@@ -71,7 +66,7 @@ const homepage_card = StyleSheet.create({
     flexDirection: "column",
     justifyContent: "space-between",
     top: "18%",
-    left: "2%",
+    margin: 20,
   },
 
   description: {

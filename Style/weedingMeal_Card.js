@@ -120,7 +120,10 @@ const weedingMeal_Card = StyleSheet.create({
   },
   bottomContainer: {
     flex: 1,
-    marginBottom: 150,
+    marginBottom: 50,
+  },
+  bottomButton:{
+    marginLeft: 20,
   },
   bottomText: {
     margin: 20,

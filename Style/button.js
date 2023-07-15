@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 
 export const globalButton = StyleSheet.create({
   button: {
-    left: "3%",
+   
     width: "90%",
     height: 55,
     backgroundColor: "transparent",
