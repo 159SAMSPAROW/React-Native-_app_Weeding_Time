@@ -36,20 +36,11 @@ const Homepage_card = () => {
             navigateToPage={() => navigation.navigate("WeedingMealPage")}
           >
             <View style={homepage_card.header}>
-              <View style={homepage_card.divider} />
-              <ImageBackground
-                style={homepage_card.banner}
-                source={require("../assets/Images/navbar_Bg.jpg")}
+              <Image
+                style={homepage_card.illustration}
+                source={category.illustration}
               />
-              <View style={homepage_card.divider} />
-
-              <View style={homepage_card.titleContainer}>
-                <Image
-                  style={homepage_card.illustration}
-                  source={category.illustration}
-                />
-                <Text style={homepage_card.title}>{category.title}</Text>
-              </View>
+              <Text style={homepage_card.title}>{category.title}</Text>
             </View>
 
             <View style={homepage_card.body}>

@@ -1,49 +1,30 @@
 import { StyleSheet, Dimensions } from "react-native";
 
 const screenHeight = Dimensions.get("window").height;
-const navbarHeight = 69;
+const navbarHeight = 55;
 
 const homepage_card = StyleSheet.create({
   style: {
     flex: 1,
-    minHeight: screenHeight - navbarHeight,
-    borderBottomWidth: 15,
-    borderBottomColor: "#D0C9E2",
+    height: screenHeight - navbarHeight,
   },
 
-  bg: {
-    height: "100%",
-  },
-  header: { top: 40 },
-
-  divider: {
-    height: 4,
-    backgroundColor: "#FFD1DC",
-    width: "100%",
-  },
-
-  banner: {
-    height: 80,
-  },
-
-  titleContainer: {
-    position: "absolute",
+  header: {
     flexDirection: "row",
-    top: -13,
+    alignItems: "center",
+    margin: "3%",
   },
 
   illustration: {
     width: 115,
     height: 115,
     borderRadius: 60,
-    left: 15,
     borderWidth: 4,
     borderColor: "#D0C9E2",
   },
 
   title: {
-    top: 32,
-    left: "25%",
+    marginLeft: 10,
     fontFamily: "Alegreya-Sans-SC",
     fontSize: 32,
     fontWeight: "light",
@@ -54,7 +35,6 @@ const homepage_card = StyleSheet.create({
   image: {
     width: "100%",
     height: 350,
-    top: "15%",
     borderWidth: 5,
     borderColor: "#FFD1DC",
   },
@@ -65,7 +45,6 @@ const homepage_card = StyleSheet.create({
     marginBottom: 5,
     flexDirection: "column",
     justifyContent: "space-between",
-    top: "18%",
     margin: 20,
   },
 
@@ -77,7 +56,7 @@ const homepage_card = StyleSheet.create({
   },
 
   eyeContainer: {
-    top: "2%",
+    margin: 6,
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
