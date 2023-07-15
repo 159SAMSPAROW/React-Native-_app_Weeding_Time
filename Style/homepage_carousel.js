@@ -1,20 +1,25 @@
 import { StyleSheet, Dimensions } from "react-native";
 const screenHeight = Dimensions.get("window").height;
+const navbar = 55;
 
 const homepage_carousel = StyleSheet.create({
+  
   container: {
     flex: 1,
-    height: screenHeight,
+    height: screenHeight - navbar,
+    backgroundColor: "#000000",
   },
 
   header: {
     flexDirection: "row",
     alignItems: "center",
     alignSelf: "center",
+    top: 20,
   },
 
   h2: {
     marginLeft: 10,
+    color: "#FFFFFF",
   },
 
   carousel: {
@@ -52,14 +57,14 @@ const homepage_carousel = StyleSheet.create({
     alignItems: "center",
     justifyContent: "space-around",
     marginLeft: 60,
-    marginTop: 30,
+    marginTop: 10,
   },
 
   carouselItemImage: {
     width: 300,
     height: 300,
     marginTop: 50,
-    marginLeft: 60,
+    alignSelf: "center",
     borderWidth: 3,
     borderColor: "#C85BEA",
     borderRadius: 150,
@@ -74,6 +79,7 @@ const homepage_carousel = StyleSheet.create({
   },
   background: {
     position: "absolute",
+    top: 30,
     width: "100%",
     height: 465,
     opacity: 0.1,

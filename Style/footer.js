@@ -2,6 +2,7 @@ import { StyleSheet } from "react-native";
 
 export const footer = StyleSheet.create({
   footerSection: {
+    
     backgroundColor: "#6750A4",
     alignItems: "center",
   },

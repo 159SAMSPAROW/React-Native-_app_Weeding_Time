@@ -9,7 +9,7 @@ import Footer from "../Components/Footer";
 
 const HomePage = () => {
   const screenHeight = Dimensions.get("window").height;
-  const navbarHeight = 62;
+  const navbarHeight = 55;
 
   return (
     <>

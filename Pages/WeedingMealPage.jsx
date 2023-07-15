@@ -8,7 +8,7 @@ import Footer from "../Components/Footer";
 
 const WeedingMealPage = () => {
   const screenHeight = Dimensions.get("window").height;
-  const navbarHeight = 62;
+  const navbarHeight = 55;
 
   return (
     <>

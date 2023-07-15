@@ -1,7 +1,7 @@
 import { StyleSheet, Dimensions } from "react-native";
 
 const screenHeight = Dimensions.get("window").height;
-const navbarHeight = 62;
+const navbarHeight = 55;
 
 export const weedingForm = StyleSheet.create({
   formSection: {

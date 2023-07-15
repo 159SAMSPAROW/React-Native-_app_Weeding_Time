@@ -1,19 +1,16 @@
 import { StyleSheet, Dimensions } from "react-native";
 
-const screenHeight = Dimensions.get("window").height;
-const navbarHeight = 62;
-
 const howToUse = StyleSheet.create({
   style: {
-    minHeight: screenHeight - navbarHeight,
+    height: 670,
     alignItems: "center",
   },
 
   backgroundImage: {
-    height: "auto",
+    height: 670,
   },
   h2: {
-    margin: 40,
+    padding: 20,
   },
 
   list: {
@@ -25,7 +22,6 @@ const howToUse = StyleSheet.create({
     borderRadius: 10,
     paddingTop: 10,
     paddingBottom: 10,
-    top: -10,
   },
 
   listItem: {
