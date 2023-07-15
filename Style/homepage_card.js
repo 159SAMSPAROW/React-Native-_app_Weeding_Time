@@ -12,7 +12,9 @@ const homepage_card = StyleSheet.create({
   header: {
     flexDirection: "row",
     alignItems: "center",
-    margin: "3%",
+    alignSelf: "center",
+    margin: 10,
+
   },
 
   illustration: {
